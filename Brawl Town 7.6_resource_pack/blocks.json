@@ -1,0 +1,28 @@
+{
+  "pa:gem_ore": {
+    "sound": "metal"
+  },
+  "pa:heard_town": {
+    "sound": "metal"
+  },
+  "pa:krystal_ore": {
+    "sound": "metal"
+  },
+  "pa:loran_ore": {
+    "sound": "metal"
+  },
+  "pa:map": {
+    "sound": "normal"
+  },
+  "pa:map_1": {
+    "sound": "normal"
+  },
+  "pa:nif_ore": {
+    "sound": "metal"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}

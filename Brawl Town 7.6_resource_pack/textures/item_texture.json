@@ -1,0 +1,458 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "pa_absolute_sword": {
+      "textures": "textures/items/pamobile/pa_absolute_sword"
+    },
+    "pa:bilet_coin": {
+      "textures": "textures/items/pamobile/pa_bilet_coin"
+    },
+    "pa:blingi_coin": {
+      "textures": "textures/items/pamobile/pa_blingi_coin"
+    },
+    "pa_chip_brawler": {
+      "textures": [
+        "textures/items/pamobile/pa_chip_brawler"
+      ]
+    },
+    "pa_chip_brawler_brake": {
+      "textures": [
+        "textures/items/pamobile/pa_chip_brawler_brake"
+      ]
+    },
+    "pa:clan_coin": {
+      "textures": "textures/items/pamobile/pa_clan_coin"
+    },
+    "pa:coordinates": {
+      "textures": "textures/items/pamobile/pa_coordinates"
+    },
+    "pa_copper_sword": {
+      "textures": "textures/items/pamobile/pa_copper_sword"
+    },
+    "pa:credit_coin": {
+      "textures": "textures/items/pamobile/pa_credit_coin"
+    },
+    "pa_dark_axe": {
+      "textures": "textures/items/pamobile/pa_dark_axe"
+    },
+    "pa_dark_boots": {
+      "textures": [
+        "textures/items/pamobile/pa_dark_boots"
+      ]
+    },
+    "pa_dark_did": {
+      "textures": [
+        "textures/items/pamobile/pa_dark_did"
+      ]
+    },
+    "pa_dark_ponji": {
+      "textures": [
+        "textures/items/pamobile/pa_dark_ponji"
+      ]
+    },
+    "pa_diamond_knight": {
+      "textures": "textures/items/pamobile/pa_diamond_knight"
+    },
+    "pa_el_primo": {
+      "textures": "textures/items/pamobile/pa_el_primo"
+    },
+    "pa:fishka": {
+      "textures": "textures/items/pamobile/pa_fishka"
+    },
+    "pa:gem": {
+      "textures": "textures/items/pamobile/pa_gem"
+    },
+    "pa:gem_2": {
+      "textures": "textures/items/pamobile/pa_gem_2"
+    },
+    "pa:gem_see": {
+      "textures": "textures/items/pamobile/pa_gem_see"
+    },
+    "pa_geml_pixe": {
+      "textures": "textures/items/pamobile/pa_geml_pixe"
+    },
+    "pa:gold_coin": {
+      "textures": "textures/items/pamobile/pa_gold_coin"
+    },
+    "pa:gold_coin_1": {
+      "textures": "textures/items/pamobile/pa_gold_coin_1"
+    },
+    "pa:gravi_coin": {
+      "textures": "textures/items/pamobile/pa_gravi_coin"
+    },
+    "pa:gravi_star_coin": {
+      "textures": "textures/items/pamobile/pa_gravi_star_coin"
+    },
+    "pa:hromo_coin": {
+      "textures": "textures/items/pamobile/pa_hromo_coin"
+    },
+    "pa_kristal_did_ogranenyi": {
+      "textures": [
+        "textures/items/pamobile/pa_kristal_did_ogranenyi"
+      ]
+    },
+    "pa:krystal": {
+      "textures": "textures/items/pamobile/pa_krystal"
+    },
+    "pa:krystal_2": {
+      "textures": "textures/items/pamobile/pa_krystal_2"
+    },
+    "pa:krystal_game": {
+      "textures": "textures/items/pamobile/pa_krystal_game"
+    },
+    "pa:krystal_nif": {
+      "textures": "textures/items/pamobile/pa_krystal_nif"
+    },
+    "pa_krystal_pixe": {
+      "textures": "textures/items/pamobile/pa_krystal_pixe"
+    },
+    "pa:krystal_prob": {
+      "textures": "textures/items/pamobile/pa_krystal_prob"
+    },
+    "pa:krystal_prob_2": {
+      "textures": "textures/items/pamobile/pa_krystal_prob_2"
+    },
+    "pa:krystal_prob_3": {
+      "textures": "textures/items/pamobile/pa_krystal_prob_3"
+    },
+    "pa:krystal_see": {
+      "textures": "textures/items/pamobile/pa_krystal_see"
+    },
+    "pa:l_coin": {
+      "textures": "textures/items/pamobile/pa_l_coin"
+    },
+    "pa:leon": {
+      "textures": "textures/items/pamobile/pa_leon"
+    },
+    "pa_lonar_axe": {
+      "textures": "textures/items/pamobile/pa_lonar_axe"
+    },
+    "pa:loran": {
+      "textures": "textures/items/pamobile/pa_loran"
+    },
+    "pa_loran_boots": {
+      "textures": [
+        "textures/items/pamobile/pa_loran_boots"
+      ]
+    },
+    "pa_loran_did": {
+      "textures": [
+        "textures/items/pamobile/pa_loran_did"
+      ]
+    },
+    "pa_loran_pixe": {
+      "textures": "textures/items/pamobile/pa_loran_pixe"
+    },
+    "pa_loran_ponji": {
+      "textures": [
+        "textures/items/pamobile/pa_loran_ponji"
+      ]
+    },
+    "pa_loran_sword": {
+      "textures": "textures/items/pamobile/pa_loran_sword"
+    },
+    "pa:magma": {
+      "textures": "textures/items/pamobile/pa_magma"
+    },
+    "pa_molot": {
+      "textures": "textures/items/pamobile/pa_molot"
+    },
+    "pa_nif_boots": {
+      "textures": [
+        "textures/items/pamobile/pa_nif_boots"
+      ]
+    },
+    "pa_nif_did": {
+      "textures": [
+        "textures/items/pamobile/pa_nif_did"
+      ]
+    },
+    "pa_nif_pixe": {
+      "textures": "textures/items/pamobile/pa_nif_pixe"
+    },
+    "pa_nif_ponji": {
+      "textures": [
+        "textures/items/pamobile/pa_nif_ponji"
+      ]
+    },
+    "pa_nif_sword": {
+      "textures": "textures/items/pamobile/pa_nif_sword"
+    },
+    "pa:pero": {
+      "textures": "textures/items/pamobile/pa_pero"
+    },
+    "pa:play_token": {
+      "textures": "textures/items/pamobile/pa_play_token"
+    },
+    "pa_prism_boots": {
+      "textures": [
+        "textures/items/pamobile/pa_prism_boots"
+      ]
+    },
+    "pa_prism_did": {
+      "textures": [
+        "textures/items/pamobile/pa_prism_did"
+      ]
+    },
+    "pa_prism_ponji": {
+      "textures": [
+        "textures/items/pamobile/pa_prism_ponji"
+      ]
+    },
+    "pa_prism_sword": {
+      "textures": "textures/items/pamobile/pa_prism_sword"
+    },
+    "pa:robot_2_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_2_spawn_egg"
+    },
+    "pa:robot_living_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_living_spawn_egg"
+    },
+    "pa:robot_4_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_4_spawn_egg"
+    },
+    "pa:robot_6_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_6_spawn_egg"
+    },
+    "pa:robot_5_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_5_spawn_egg"
+    },
+    "pa:robot_3_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_3_spawn_egg"
+    },
+    "pa:roza": {
+      "textures": "textures/items/pamobile/pa_roza"
+    },
+    "pa:ruby": {
+      "textures": "textures/items/pamobile/pa_ruby"
+    },
+    "pa_sand_pixe": {
+      "textures": "textures/items/pamobile/pa_sand_pixe"
+    },
+    "pa:robot_living_bolt_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_living_bolt_spawn_egg"
+    },
+    "pa:robot_living_pay_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_robot_living_pay_spawn_egg"
+    },
+    "pa:seif_1_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_seif_1_spawn_egg"
+    },
+    "pa:seif_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_seif_spawn_egg"
+    },
+    "pa:slitok_gold": {
+      "textures": "textures/items/pamobile/pa_slitok_gold"
+    },
+    "pa:slitok_pfoenix": {
+      "textures": "textures/items/pamobile/pa_slitok_pfoenix"
+    },
+    "pa:star_coin": {
+      "textures": "textures/items/pamobile/pa_star_coin"
+    },
+    "pa:seif_1_super_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_seif_1_super_spawn_egg"
+    },
+    "pa:seif_2_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_seif_2_spawn_egg"
+    },
+    "pa:seif_2_super_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_seif_2_super_spawn_egg"
+    },
+    "pa:skeleton_3_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_skeleton_3_spawn_egg"
+    },
+    "pa:skeleton_2_spawn_egg": {
+      "textures": "textures/items/pamobile/pa_skeleton_2_spawn_egg"
+    },
+    "pa_strong_brawler_1": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_1"
+      ]
+    },
+    "pa_strong_brawler_2_protection": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_2_protection"
+      ]
+    },
+    "pa_strong_brawler_2_regen": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_2_regen"
+      ]
+    },
+    "pa_strong_brawler_2_s": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_2_s"
+      ]
+    },
+    "pa_strong_brawler_2_speed": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_2_speed"
+      ]
+    },
+    "pa_strong_brawler_3_protection": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_3_protection"
+      ]
+    },
+    "pa_strong_brawler_3_regen": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_3_regen"
+      ]
+    },
+    "pa_strong_brawler_3_s": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_3_s"
+      ]
+    },
+    "pa_strong_brawler_3_speed": {
+      "textures": [
+        "textures/items/pamobile/pa_strong_brawler_3_speed"
+      ]
+    },
+    "pa_teste_me": {
+      "textures": [
+        "textures/items/pamobile/pa_teste_me"
+      ]
+    },
+    "pa:win_token": {
+      "textures": "textures/items/pamobile/pa_win_token"
+    },
+    "pa:winstreak_1": {
+      "textures": "textures/items/pamobile/pa_winstreak_1"
+    },
+    "pa:winstreak_10": {
+      "textures": "textures/items/pamobile/pa_winstreak_10"
+    },
+    "pa:winstreak_11": {
+      "textures": "textures/items/pamobile/pa_winstreak_11"
+    },
+    "pa:winstreak_12": {
+      "textures": "textures/items/pamobile/pa_winstreak_12"
+    },
+    "pa:winstreak_13": {
+      "textures": "textures/items/pamobile/pa_winstreak_13"
+    },
+    "pa:winstreak_14": {
+      "textures": "textures/items/pamobile/pa_winstreak_14"
+    },
+    "pa:winstreak_15": {
+      "textures": "textures/items/pamobile/pa_winstreak_15"
+    },
+    "pa:winstreak_16": {
+      "textures": "textures/items/pamobile/pa_winstreak_16"
+    },
+    "pa:winstreak_17": {
+      "textures": "textures/items/pamobile/pa_winstreak_17"
+    },
+    "pa:winstreak_18": {
+      "textures": "textures/items/pamobile/pa_winstreak_18"
+    },
+    "pa:winstreak_19": {
+      "textures": "textures/items/pamobile/pa_winstreak_19"
+    },
+    "pa:winstreak_2": {
+      "textures": "textures/items/pamobile/pa_winstreak_2"
+    },
+    "pa:winstreak_20": {
+      "textures": "textures/items/pamobile/pa_winstreak_20"
+    },
+    "pa:winstreak_21": {
+      "textures": "textures/items/pamobile/pa_winstreak_21"
+    },
+    "pa:winstreak_3": {
+      "textures": "textures/items/pamobile/pa_winstreak_3"
+    },
+    "pa:winstreak_4": {
+      "textures": "textures/items/pamobile/pa_winstreak_4"
+    },
+    "pa:winstreak_5": {
+      "textures": "textures/items/pamobile/pa_winstreak_5"
+    },
+    "pa:winstreak_6": {
+      "textures": "textures/items/pamobile/pa_winstreak_6"
+    },
+    "pa:winstreak_7": {
+      "textures": "textures/items/pamobile/pa_winstreak_7"
+    },
+    "pa:winstreak_8": {
+      "textures": "textures/items/pamobile/pa_winstreak_8"
+    },
+    "pa:winstreak_9": {
+      "textures": "textures/items/pamobile/pa_winstreak_9"
+    },
+    "pa:yagoda_palka": {
+      "textures": "textures/items/pamobile/pa_yagoda_palka"
+    }
+  }
+}
