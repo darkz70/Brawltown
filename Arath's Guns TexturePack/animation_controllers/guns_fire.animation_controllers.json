@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.guns_fire": {
+      "states": {
+        "default": {
+          "sound_effects": [
+            {
+              "effect": "shoot"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bullet_hit": {
+      "states": {
+        "default": {
+          "sound_effects": [
+            {
+              "effect": "hit"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.hit": {
+      "states": {
+        "default": {
+          "sound_effects": [
+            {
+              "effect": "hit"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

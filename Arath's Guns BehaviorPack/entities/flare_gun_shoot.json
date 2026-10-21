@@ -1,0 +1,157 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gunsaddon:flare_gun_shoot",
+      "runtime_identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "flare_gun_shoot": "controller.animation.flare_gun_shoot"
+      },
+      "scripts": {
+        "animate": [
+          "flare_gun_shoot"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 10.0,
+        "randomInterval": false,
+        "time_down_event": {
+          "event": "melee"
+        }
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "definition_event": {
+            "event_trigger": {
+              "event": "hit",
+              "target": "self"
+            }
+          },
+          "impact_damage": {
+            "damage": [
+              25,
+              25.0
+            ],
+            "knockback": true,
+            "catch_fire": true,
+            "destroy_on_hit": true,
+            "semi_random_diff_damage": false
+          },
+          "catch_fire": {
+            "fire_affected_by_griefing": true
+          },
+          "particle_on_hit": {
+            "num_particles": 5,
+            "on_entity_hit": true,
+            "particle_type": "reddust"
+          },
+          "stick_in_ground": {}
+        },
+        "power": 0.5,
+        "gravity": 0.0025,
+        "anchor": 1,
+        "destroy_on_hurt": true,
+        "uncertainty_base": 1,
+        "uncertainty_multiplier": 1,
+        "should_bounce": false,
+        "inertia": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "multiple_targets": false,
+        "stop_on_hurt": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:type_family": {
+        "family": [
+          "bullet"
+        ]
+      }
+    },
+    "component_groups": {
+      "hit": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    },
+    "events": {
+      "melee": {
+        "randomize": [
+          {
+            "weight": 25,
+            "run_command": {
+              "command": [
+                "summon gunsaddon:guns_supply_drop ~ ~45 ~",
+                "playsound mob.villager.yes @p"
+              ]
+            }
+          },
+          {
+            "weight": 25,
+            "run_command": {
+              "command": [
+                "playsound mob.villager.no @p"
+              ]
+            }
+          },
+          {
+            "weight": 25,
+            "run_command": {
+              "command": [
+                "summon gunsaddon:guns_supply_drop_orange ~ ~45 ~",
+                "playsound mob.villager.yes @p"
+              ]
+            }
+          },
+          {
+            "weight": 25,
+            "run_command": {
+              "command": [
+                "summon gunsaddon:guns_supply_drop_ammo ~ ~45 ~",
+                "playsound mob.villager.yes @p"
+              ]
+            }
+          }
+        ]
+      },
+      "hit": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "playsound bullet.hit"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "hit"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

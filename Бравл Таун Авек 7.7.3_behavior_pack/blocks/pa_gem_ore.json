@@ -1,0 +1,27 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pa:gem_ore"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:friction": 0.5,
+      "minecraft:map_color": "#348F23",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pa:gem_ore",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "pa_gem_ore:trigger": {},
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 111.0
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:display_name": "гем руда"
+    }
+  }
+}

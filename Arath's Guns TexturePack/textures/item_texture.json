@@ -1,0 +1,330 @@
+{
+  "resource_pack_name": "chickenxp resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "drone_ammo": {
+      "textures": "textures/items/drone_ammo"
+    },
+    "aac_honey_badger": {
+      "textures": "textures/items/guns/aac_honey_badger"
+    },
+    "aac_honey_badger_ammo": {
+      "textures": "textures/items/guns/aac_honey_badger_ammo"
+    },
+    "dynamite": {
+      "textures": "textures/items/guns/dynamite"
+    },
+    "explosion_proof_chest": {
+      "textures": "textures/items/explosion_proof_chest"
+    },
+    "explosion_proof_helmet": {
+      "textures": "textures/items/explosion_proof_helmet"
+    },
+    "explosion_proof_pants": {
+      "textures": "textures/items/explosion_proof_pants"
+    },
+    "explosion_proof_boots": {
+      "textures": "textures/items/explosion_proof_boots"
+    },
+    "minigun": {
+      "textures": "textures/items/guns/minigun"
+    },
+    "minigun_ammo": {
+      "textures": "textures/items/guns/minigun_ammo"
+    },
+    "g3sg1": {
+      "textures": "textures/items/guns/g3sg1"
+    },
+    "g3sg1_ammo": {
+      "textures": "textures/items/guns/g3sg1_ammo"
+    },
+    "g3sg1_scope": {
+      "textures": "textures/items/guns/g3sg1_scope"
+    },
+    "spas": {
+      "textures": "textures/items/guns/spas"
+    },
+    "rpg": {
+      "textures": "textures/items/guns/rpg"
+    },
+    "battle_royale_helmet": {
+      "textures": "textures/items/battle_royale_helmet"
+    },
+    "bulletproof_vest": {
+      "textures": "textures/items/bulletproof_vest"
+    },
+    "leg_arm_protection": {
+      "textures": "textures/items/leg_arm_protection"
+    },
+    "soldier_boots": {
+      "textures": "textures/items/soldier_boots"
+    },
+    "flare_gun": {
+      "textures": "textures/items/guns/flare_gun"
+    },
+    "flare_gun_ammo": {
+      "textures": "textures/items/guns/flare_gun_ammo"
+    },
+    "adrenaline": {
+      "textures": "textures/items/adrenaline"
+    },
+    "guns_supply_drop": {
+      "textures": "textures/items/guns_supply_drop"
+    },
+    "guns_supply_drop_ammo": {
+      "textures": "textures/items/guns_supply_drop_ammo"
+    },
+    "guns_supply_drop_orange": {
+      "textures": "textures/items/guns_supply_drop_orange"
+    },
+    "m60": {
+      "textures": "textures/items/guns/m60"
+    },
+    "m60_ammo": {
+      "textures": "textures/items/guns/m60_ammo"
+    },
+    "grenade_m67": {
+      "textures": "textures/items/guns/grenade_m67"
+    },
+    "dual_micro_uzi": {
+      "textures": "textures/items/guns/dual_micro_uzi"
+    },
+    "micro_uzi": {
+      "textures": "textures/items/guns/micro_uzi"
+    },
+    "micro_uzi_ammo": {
+      "textures": "textures/items/guns/micro_uzi_ammo"
+    },
+    "pkm": {
+      "textures": "textures/items/guns/pkm"
+    },
+    "pkm_ammo": {
+      "textures": "textures/items/guns/pkm_ammo"
+    },
+    "dual_sawed_off_shotgun": {
+      "textures": "textures/items/guns/dual_sawed_off_shotgun"
+    },
+    "sawed_off_shotgun": {
+      "textures": "textures/items/guns/sawed_off_shotgun"
+    },
+    "contender": {
+      "textures": "textures/items/guns/contender"
+    },
+    "dual_double_action_revolver": {
+      "textures": "textures/items/guns/dual_double_action_revolver"
+    },
+    "double_action_revolver": {
+      "textures": "textures/items/guns/double_action_revolver"
+    },
+    "winchester_1887": {
+      "textures": "textures/items/guns/winchester_1887"
+    },
+    "barret_m82a1_scope": {
+      "textures": "textures/items/guns/barret_m82a1_scope"
+    },
+    "barret_m82a1": {
+      "textures": "textures/items/guns/barret_m82a1"
+    },
+    "barret_m82a1_ammo": {
+      "textures": "textures/items/guns/barret_m82a1_ammo"
+    },
+    "railgun": {
+      "textures": "textures/items/guns/railgun"
+    },
+    "railgun_ammo": {
+      "textures": "textures/items/guns/railgun_ammo"
+    },
+    "mp5": {
+      "textures": "textures/items/guns/mp5"
+    },
+    "mp5_ammo": {
+      "textures": "textures/items/guns/mp5_ammo"
+    },
+    "springfield_scope": {
+      "textures": "textures/items/guns/springfield_scope"
+    },
+    "dual_glock_17": {
+      "textures": "textures/items/guns/dual_glock_17"
+    },
+    "glock_17": {
+      "textures": "textures/items/guns/glock_17"
+    },
+    "glock_17_with_silencer": {
+      "textures": "textures/items/guns/glock_17_with_silencer"
+    },
+    "glock_17_ammo": {
+      "textures": "textures/items/guns/glock_17_ammo"
+    },
+    "skorpion": {
+      "textures": "textures/items/guns/skorpion"
+    },
+    "skorpion_ammo": {
+      "textures": "textures/items/guns/skorpion_ammo"
+    },
+    "desert_eagle": {
+      "textures": "textures/items/guns/desert_eagle"
+    },
+    "desert_eagle_ammo": {
+      "textures": "textures/items/guns/desert_eagle_ammo"
+    },
+    "grenade_launcher": {
+      "textures": "textures/items/guns/grenade_launcher"
+    },
+    "m202": {
+      "textures": "textures/items/guns/m202"
+    },
+    "m202_ammo": {
+      "textures": "textures/items/guns/m202_ammo"
+    },
+    "grenade_bullet": {
+      "textures": "textures/items/guns/grenade_bullet"
+    },
+    "tavor_21_ammo": {
+      "textures": "textures/items/guns/tavor_21_ammo"
+    },
+    "tavor_21": {
+      "textures": "textures/items/guns/tavor_21"
+    },
+    "shorty": {
+      "textures": "textures/items/guns/shorty"
+    },
+    "scar_ammo": {
+      "textures": "textures/items/guns/scar_ammo"
+    },
+    "scar_m203": {
+      "textures": "textures/items/guns/scar_m203"
+    },
+    "scar": {
+      "textures": "textures/items/guns/scar"
+    },
+    "m4a1_ammo": {
+      "textures": "textures/items/guns/m4a1_ammo"
+    },
+    "m4a1": {
+      "textures": "textures/items/guns/m4a1"
+    },
+    "m4a1_shotgun": {
+      "textures": "textures/items/guns/m4a1_shotgun"
+    },
+    "m16_ammo": {
+      "textures": "textures/items/guns/m16_ammo"
+    },
+    "m203": {
+      "textures": "textures/items/guns/m203"
+    },
+    "m16_m203": {
+      "textures": "textures/items/guns/m16_m203"
+    },
+    "m16": {
+      "textures": "textures/items/guns/m16"
+    },
+    "ak47_ammo": {
+      "textures": "textures/items/guns/ak47_ammo"
+    },
+    "ak47_shotgun": {
+      "textures": "textures/items/guns/ak47_shotgun"
+    },
+    "ak47": {
+      "textures": "textures/items/guns/ak47"
+    },
+    "aa12_ammo": {
+      "textures": "textures/items/guns/aa12_ammo"
+    },
+    "aa12": {
+      "textures": "textures/items/guns/aa12"
+    },
+    "revolver": {
+      "textures": "textures/items/guns/revolver"
+    },
+    "saiga_12_ammo": {
+      "textures": "textures/items/guns/saiga_12_ammo"
+    },
+    "saiga_12": {
+      "textures": "textures/items/guns/saiga_12"
+    },
+    "gold_uzi_ammo": {
+      "textures": "textures/items/guns/gold_uzi_ammo"
+    },
+    "uzi_ammo": {
+      "textures": "textures/items/guns/uzi_ammo"
+    },
+    "gold_uzi": {
+      "textures": "textures/items/guns/gold_uzi"
+    },
+    "uzi": {
+      "textures": "textures/items/guns/uzi"
+    },
+    "gold_thompson": {
+      "textures": "textures/items/guns/gold_thompson"
+    },
+    "gold_thompson_ammo": {
+      "textures": "textures/items/guns/gold_thompson_ammo"
+    },
+    "syringe": {
+      "textures": "textures/items/syringe"
+    },
+    "modern_guns_table": {
+      "textures": "textures/items/ww2_table"
+    },
+    "ww2_table": {
+      "textures": "textures/items/ww2_table"
+    },
+    "winchester_shotgun": {
+      "textures": "textures/items/guns/winchester_shotgun"
+    },
+    "cartucho": {
+      "textures": "textures/items/guns/cartucho"
+    },
+    "bala_pesada": {
+      "textures": "textures/items/guns/bala_pesada"
+    },
+    "bala_mediana": {
+      "textures": "textures/items/guns/bala_mediana"
+    },
+    "bala_ligera": {
+      "textures": "textures/items/guns/bala_ligera"
+    },
+    "mp40": {
+      "textures": "textures/items/guns/mp40"
+    },
+    "mp40_ammo": {
+      "textures": "textures/items/guns/mp40_ammo"
+    },
+    "sturmgewehr44": {
+      "textures": "textures/items/guns/sturmgewehr44"
+    },
+    "sturmgewehr44_ammo": {
+      "textures": "textures/items/guns/sturmgewehr44_ammo"
+    },
+    "luger": {
+      "textures": "textures/items/guns/luger"
+    },
+    "luger_ammo": {
+      "textures": "textures/items/guns/luger_ammo"
+    },
+    "mauser": {
+      "textures": "textures/items/guns/mauser"
+    },
+    "mauser_ammo": {
+      "textures": "textures/items/guns/mauser_ammo"
+    },
+    "bazooka": {
+      "textures": "textures/items/guns/bazooka"
+    },
+    "rocket": {
+      "textures": "textures/items/guns/rocket"
+    },
+    "springfield": {
+      "textures": "textures/items/guns/springfield"
+    },
+    "thompson": {
+      "textures": "textures/items/guns/thompson"
+    },
+    "thompson_ammo": {
+      "textures": "textures/items/guns/thompson_ammo"
+    },
+    "springfield_ammo": {
+      "textures": "textures/items/guns/springfield_ammo"
+    }
+  }
+}

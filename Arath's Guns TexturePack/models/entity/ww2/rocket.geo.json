@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rocket",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "thompson",
+					"parent": "barrell",
+					"pivot": [0, 5, 0],
+					"cubes": [
+						{"origin": [-1, 0, -6], "size": [3, 3, 5], "pivot": [0.5, 1.5, 1.01999], "rotation": [-90, 0, 0], "uv": [0, 9]},
+						{"origin": [-1, 0, -7.5], "size": [3, 3, 2], "inflate": -0.1, "pivot": [0.5, 1.5, 1.01999], "rotation": [-90, 0, 0], "uv": [14, 15]},
+						{"origin": [-1, 0, -8.5], "size": [3, 3, 2], "inflate": -0.3, "pivot": [0.5, 1.5, 1.01999], "rotation": [-90, 0, 0], "uv": [11, 9]},
+						{"origin": [-1, 0, -2.5], "size": [3, 3, 2], "inflate": -0.3, "pivot": [0.5, 1.5, 1.01999], "rotation": [-90, 0, 0], "uv": [10, 0]},
+						{"origin": [0, 1, -1], "size": [1, 1, 8], "pivot": [0.5, 1.5, 1.01999], "rotation": [-90, 0, 0], "uv": [0, 0]},
+						{"origin": [0, -2.37287, 4.60707], "size": [1, 1, 1], "inflate": -0.025, "pivot": [0.5, 1.5, 1.01999], "rotation": [-45, 0, 0], "uv": [3, 3]},
+						{"origin": [0, -3.08709, 3.89286], "size": [1, 1, 1], "inflate": -0.025, "pivot": [0.5, 1.5, 1.01999], "rotation": [-45, 0, 0], "uv": [3, 1]},
+						{"origin": [5.27498, 1.35711, 0.8771], "size": [1, 1, 1], "inflate": -0.025, "pivot": [0.5, 1.5, 1.01999], "rotation": [45, 0, 90], "uv": [0, 0]},
+						{"origin": [5.27498, 0.64289, 0.16289], "size": [1, 1, 1], "inflate": -0.025, "pivot": [0.5, 1.5, 1.01999], "rotation": [45, 0, 90], "uv": [0, 2]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.tank": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "tank": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/camerashake add @p[x=~,y=~,z=~,r=20] 0.15 0.15 positional"
+
+
+          ]
+        },
+        "tank": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/camerashake add @p[x=~,y=~,z=~,r=20] 0.15 0.15 positional"
+          ]
+        }
+      }
+    }
+  }
+}

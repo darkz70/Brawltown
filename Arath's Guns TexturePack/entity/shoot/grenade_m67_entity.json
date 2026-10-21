@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:grenade_m67_entity",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/3d_guns/grenade_m67"
+			},
+			"geometry": {
+				"default": "geometry.grenade_m67_entity"
+			},
+			"animations": {
+				"loop": "animation.grenade_m67_entity.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.item_3d"
+			],
+			"spawn_egg": {
+				"texture": "dynamite",
+				"texture_index": 0
+			}
+		}
+	}
+}

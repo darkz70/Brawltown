@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "gunsaddon:minigun",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/3d_guns/minigun.png"
+			},
+			"geometry": {
+				"default": "geometry.minigun"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"first_person_main_hand": "animation.guns.first_person_main_hand",
+				"first_person_sneaking_main_hand": "animation.guns.first_person_main_hand",
+				"minigun": "animation.minigun.idle",
+				"minigun_up_third": "animation.minigun.up_third",
+				"minigun_sneaking": "animation.minigun.on",
+				"third_person_main_hand": "animation.guns.third_person_main_hand"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';"
+				],
+				"animate": [
+					{
+						"first_person_main_hand": "(v.main_hand && c.is_first_person) && !query.is_sneaking"
+					},
+					{
+						"first_person_sneaking_main_hand": "(v.main_hand && c.is_first_person) && query.is_sneaking"
+					},
+					{
+						"minigun": "(v.main_hand && !c.is_first_person)"
+					},
+					{
+						"minigun_sneaking": "v.main_hand && query.is_sneaking"
+					},
+					{
+						"minigun_up_third": "v.main_hand && query.is_sneaking && !c.is_first_person"
+					},
+					{
+						"third_person_main_hand": "v.main_hand && !c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+} 

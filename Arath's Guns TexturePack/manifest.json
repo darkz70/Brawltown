@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Arath's Guns 1.26.13 RP",
+    "description": "Created by ArathNido (Updated for 1.26.13)",
+    "uuid": "d7cadb65-6e10-4561-9686-e9eb04efb3e8",
+    "version": [
+      1,
+      26,
+      13
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "e3df1b4e-a055-4bb7-943c-9a18ee5f1a3c",
+      "version": [
+        1,
+        26,
+        13
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a4d73e08-d489-4714-b90b-763fe4a8ba21",
+      "version": [
+        1,
+        26,
+        13
+      ]
+    }
+  ]
+}

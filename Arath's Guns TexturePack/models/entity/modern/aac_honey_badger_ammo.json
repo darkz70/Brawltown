@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.aac_honey_badger_ammo",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "thompson",
+					"parent": "barrell",
+					"pivot": [-0.04167, 6.88438, 1.38115]
+				},
+				{
+					"name": "cargador",
+					"parent": "thompson",
+					"pivot": [0, 0.8709, -0.36284],
+					"cubes": [
+						{"origin": [-0.5, -0.3, -0.75], "size": [1, 4, 3], "inflate": 0.125, "pivot": [-0.4, 3.775, 1.15], "rotation": [-20.5, 0, 0], "uv": [35, 13]},
+						{"origin": [-1, -1.15, -1.25], "size": [2, 1, 4], "inflate": -0.275, "pivot": [-0.4, 3.775, 1.15], "rotation": [-20.5, 0, 0], "uv": [26, 6]}
+					]
+				}
+			]
+		}
+	]
+}

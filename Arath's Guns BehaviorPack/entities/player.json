@@ -1,0 +1,750 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          {
+            "sniper.idle": "query.equipped_item_any_tag('slot.weapon.mainhand', 'sniper') && query.is_sneaking"
+          },
+          {
+            "sniper.off": "query.equipped_item_any_tag('slot.weapon.mainhand', 'sniper') && !query.is_sneaking"
+          },
+          {
+            "minigun_loop.idle": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minigun') && query.is_sneaking"
+          }
+        ]
+      },
+      "animations": {
+        "minigun_loop.idle": "animation.minigun_loop.idle",
+        "sniper.idle": "controller.animation.sniper.idle",
+        "sniper.off": "controller.animation.sniper.off"
+      }
+    },
+    "component_groups": {
+      "minecraft:default_scale": {
+        "minecraft:scale": {
+          "value": 1.0
+        }
+      },
+      "minecraft:sonic_the_werehog": {
+        "minecraft:scale": {
+          "value": 1.15
+        }
+      },
+      "minecraft:sonic_classic": {
+        "minecraft:scale": {
+          "value": 0.75
+        }
+      },
+      "minecraft:convert_entity": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "minecraft:convert_entity_off": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "minecraft:sonic_character": {
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        }
+      },
+      "minecraft:sonic_character_off": {
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "fall",
+            "deals_damage": true
+          }
+        }
+      },
+      "minecraft:sonic_hability": {
+        "minecraft:area_attack": {
+          "damage_range": 2.0,
+          "damage_per_tick": 25.0,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "spiderverse_enemy"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "mob"
+              }
+            ]
+          }
+        }
+      },
+      "minecraft:add_metal_arms_attack": {
+        "minecraft:area_attack": {
+          "damage_range": 2.5,
+          "damage_per_tick": 20.0,
+          "cause": "contact",
+          "entity_filter": {
+            "any_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "spiderverse_enemy"
+              }
+            ]
+          }
+        }
+      },
+      "minecraft:player": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:experience_reward": {
+          "on_death": "Math.Min(query.player_level * 7, 100)"
+        },
+        "minecraft:type_family": {
+          "family": [
+            "player"
+          ]
+        },
+        "minecraft:is_hidden_when_invisible": {},
+        "minecraft:loot": {
+          "table": "loot_tables/empty.json"
+        },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        },
+        "minecraft:can_climb": {},
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "in_lava",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:player.saturation": {
+          "value": 20
+        },
+        "minecraft:player.exhaustion": {
+          "value": 0,
+          "max": 4
+        },
+        "minecraft:player.level": {
+          "value": 0,
+          "max": 24791
+        },
+        "minecraft:player.experience": {
+          "value": 0,
+          "max": 1
+        },
+        "minecraft:breathable": {
+          "total_supply": 15,
+          "suffocate_time": -1,
+          "inhale_time": 3.75,
+          "generates_bubbles": false
+        },
+        "minecraft:nameable": {
+          "always_show": true,
+          "allow_name_tag_renaming": false
+        },
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:insomnia": {
+          "days_until_insomnia": 3
+        },
+        "minecraft:rideable": {
+          "seat_count": 2,
+          "family_types": [
+            "parrot_tame"
+          ],
+          "pull_in_entities": true,
+          "seats": [
+            {
+              "position": [
+                0.4,
+                -0.2,
+                -0.1
+              ],
+              "min_rider_count": 0,
+              "max_rider_count": 0,
+              "lock_rider_rotation": 0
+            },
+            {
+              "position": [
+                -0.4,
+                -0.2,
+                -0.1
+              ],
+              "min_rider_count": 1,
+              "max_rider_count": 2,
+              "lock_rider_rotation": 0
+            }
+          ]
+        },
+        "minecraft:conditional_bandwidth_optimization": {},
+        "minecraft:block_climber": {},
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          }
+        }
+      },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.0,
+            0.0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      },
+      "minecraft:spider": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:on_death": {
+          "event": "minecraft:delete_powers",
+          "target": "self"
+        },
+        "minecraft:experience_reward": {
+          "on_death": "Math.Min(query.player_level * 7, 100)"
+        },
+        "minecraft:type_family": {
+          "family": [
+            "player"
+          ]
+        },
+        "minecraft:is_hidden_when_invisible": {},
+        "minecraft:loot": {
+          "table": "loot_tables/empty.json"
+        },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        },
+        "minecraft:can_climb": {},
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "in_lava",
+                "subject": "self",
+                "operator": "==",
+                "value": true
+              },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:player.saturation": {
+          "value": 20
+        },
+        "minecraft:player.exhaustion": {
+          "value": 0,
+          "max": 4
+        },
+        "minecraft:player.level": {
+          "value": 0,
+          "max": 24791
+        },
+        "minecraft:player.experience": {
+          "value": 0,
+          "max": 1
+        },
+        "minecraft:breathable": {
+          "total_supply": 15,
+          "suffocate_time": -1,
+          "inhale_time": 3.75,
+          "generates_bubbles": false
+        },
+        "minecraft:nameable": {
+          "always_show": true,
+          "allow_name_tag_renaming": false
+        },
+        "minecraft:physics": {},
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:insomnia": {
+          "days_until_insomnia": 3
+        },
+        "minecraft:rideable": {
+          "seat_count": 2,
+          "family_types": [
+            "parrot_tame"
+          ],
+          "pull_in_entities": true,
+          "seats": [
+            {
+              "position": [
+                0.4,
+                -0.2,
+                -0.1
+              ],
+              "min_rider_count": 0,
+              "max_rider_count": 0,
+              "lock_rider_rotation": 0
+            },
+            {
+              "position": [
+                -0.4,
+                -0.2,
+                -0.1
+              ],
+              "min_rider_count": 1,
+              "max_rider_count": 2,
+              "lock_rider_rotation": 0
+            }
+          ]
+        },
+        "minecraft:conditional_bandwidth_optimization": {},
+        "minecraft:block_climber": {},
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          }
+        }
+      },
+      "minecraft:spider_clear_levitation": {
+        "minecraft:spell_effects": {
+          "remove_effects": "levitation"
+        }
+      },
+      "minecraft:reset": {
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.02
+        },
+        "minecraft:color": {
+          "value": 0
+        },
+        "minecraft:color2": {
+          "value": 0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 0.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "has_component",
+              "subject": "self",
+              "operator": "not",
+              "value": "minecraft:variant"
+            },
+            "event": "minecraft:player"
+          }
+        ]
+      }
+    },
+    "events": {
+      "sonic_jump": {
+        "run_command": {
+          "command": [
+            "playsound effects.sonic_jump @a ~ ~ ~"
+          ]
+        }
+      },
+      "minecraft:reset": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "minecraft:player",
+                "minecraft:spider",
+                "minecraft:add_bad_omen",
+                "minecraft:clear_bad_omen_spell_effect",
+                "minecraft:raid_trigger"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:reset"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "minecraft:reset"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:player": {
+        "sequence": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "has_component",
+                  "subject": "self",
+                  "operator": "not",
+                  "value": "minecraft:variant"
+                },
+                {
+                  "test": "is_variant",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": 0
+                }
+              ]
+            },
+            "sequence": [
+              {
+                "run_command": {
+                  "command": [
+                    "event entity @s minecraft:post_minecraft_abilities",
+                    "event entity @s minecraft:reset"
+                  ]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "minecraft:player"
+                  ]
+                },
+                "run_command": {
+                  "command": [
+                    "playsound mob.endermen.portal @a ~ ~ ~",
+                    "particle minecraft:water_evaporation_bucket_emitter ~-0.5 ~0.5 ~-0.5"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:delete_powers": {
+        "sequence": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_variant",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": 0
+                }
+              ]
+            },
+            "sequence": [
+              {
+                "remove": {
+                  "component_groups": [
+                    "minecraft:spider"
+                  ]
+                },
+                "add": {
+                  "component_groups": [
+                    "minecraft:player"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:spider": {
+        "sequence": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_variant",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": 7
+                }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups": [
+                    "minecraft:spider"
+                  ]
+                },
+                "remove": {
+                  "component_groups": [
+                    "minecraft:player"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sonic_classic": {
+        "add": {
+          "component_groups": [
+            "minecraft:sonic_classic"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:default_scale",
+            "minecraft:sonic_the_werehog"
+          ]
+        }
+      },
+      "sonic_the_werehog": {
+        "add": {
+          "component_groups": [
+            "minecraft:sonic_the_werehog"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:default_scale",
+            "minecraft:sonic_classic"
+          ]
+        }
+      },
+      "default_scale": {
+        "add": {
+          "component_groups": [
+            "minecraft:default_scale"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:sonic_the_werehog",
+            "minecraft:sonic_classic"
+          ]
+        }
+      },
+      "convert_entity": {
+        "add": {
+          "component_groups": [
+            "minecraft:convert_entity"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:convert_entity_off"
+          ]
+        }
+      },
+      "convert_entity_off": {
+        "add": {
+          "component_groups": [
+            "minecraft:convert_entity_off"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:convert_entity"
+          ]
+        }
+      },
+      "sonic_character_on": {
+        "add": {
+          "component_groups": [
+            "minecraft:sonic_character"
+          ]
+        }
+      },
+      "sonic_character_off": {
+        "remove": {
+          "component_groups": [
+            "minecraft:sonic_character_off"
+          ]
+        }
+      },
+      "add_sonic_hability": {
+        "add": {
+          "component_groups": [
+            "minecraft:sonic_hability"
+          ]
+        }
+      },
+      "remove_sonic_hability": {
+        "remove": {
+          "component_groups": [
+            "minecraft:sonic_hability"
+          ]
+        }
+      },
+      "add_metal_arms_attack": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_metal_arms_attack"
+          ]
+        }
+      },
+      "remove_metal_arms_attack": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_metal_arms_attack"
+          ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:spider_clear_levitation": {
+        "add": {
+          "component_groups": [
+            "minecraft:spider_clear_levitation"
+          ]
+        }
+      }
+    }
+  }
+}

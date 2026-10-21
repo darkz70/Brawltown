@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "gunsaddon:bala_ligera"
+    },
+    "tags": [
+      "bullet_box"
+    ],
+    "ingredients": [
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "minecraft:gunpowder",
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "gunsaddon:bala_ligera",
+      "count": 16
+    },
+    "unlock": [
+      {
+        "context": "AlwaysUnlocked"
+      }
+    ]
+  }
+}

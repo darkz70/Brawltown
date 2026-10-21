@@ -1,0 +1,1 @@
+give @s pa:winstreak_10

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.sniper.off": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "electric_web": "(1.0)"
+            }
+          ],
+          "on_entry": [
+					"/effect @s slowness 0 51 true"
+          ]
+        },
+        "electric_web": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+					"/effect @s slowness 0 51 true"
+          ]
+        }
+      }
+    }
+  }
+}

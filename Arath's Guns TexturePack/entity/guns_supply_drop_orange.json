@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:guns_supply_drop_orange",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/entity/guns_supply_box_orange"
+			},
+			"geometry": {
+				"default": "geometry.guns_supply_box"
+			},
+			"animations": {
+				"fly_on": "animation.guns_supply_box.on",
+				"fly_off": "animation.guns_supply_box.off"
+			},
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+			"animation_controllers": [
+			{ "guns_supply_box": "controller.animation.guns_supply_box" }
+			],
+			"render_controllers": [
+				"controller.render.item_3d"
+			],
+			"spawn_egg": {
+				"texture": "guns_supply_drop_orange",
+				"texture_index": 0
+			}
+		}
+	}
+}
