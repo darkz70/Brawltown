@@ -1,0 +1,21 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.minigun":{
+			"states":{
+				"default":{
+					"blend_transition":0.2,"transitions": [
+					{
+						"minigun":"q.equipped_item_any_tag('slot.weapon.mainhand', 'minigun') && !variable.is_first_person"}
+						]
+						},
+						"minigun":{"animations":["minigun"],
+						"blend_transition":0.2,"transitions":[
+						{
+							"default":"!q.equipped_item_any_tag('slot.weapon.mainhand', 'minigun') || variable.is_first_person"}
+							]
+						}
+					}
+				}
+			}
+		}

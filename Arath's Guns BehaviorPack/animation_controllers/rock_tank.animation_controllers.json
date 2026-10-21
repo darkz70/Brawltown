@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rock_tank": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rock_tank": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/effect @p[x=~,y=~,z=~,r=3] slowness 1 4"
+
+
+          ]
+        },
+        "rock_tank": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/effect @p[x=~,y=~,z=~,r=3] slowness 1 4"
+          ]
+        }
+      }
+    }
+  }
+}

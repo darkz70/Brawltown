@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pkm_ammo",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "thompson",
+					"parent": "barrell",
+					"pivot": [-0.04167, 6.88438, 1.38115]
+				},
+				{
+					"name": "reload",
+					"parent": "thompson",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, -1, -1.7], "size": [6, 1, 1], "inflate": -0.3, "uv": [34, 29]},
+						{"origin": [-3, 0.25, -1.7], "size": [6, 1, 1], "inflate": -0.3, "uv": [34, 31]},
+						{"origin": [-3, 1.5, -1.7], "size": [6, 1, 1], "inflate": -0.3, "uv": [0, 35]},
+						{"origin": [-3, -1.4, -1.375], "size": [6, 4, 4], "inflate": 0, "uv": [12, 40]},
+						{"origin": [-3.5, 2.2, -1.875], "size": [7, 1, 5], "inflate": -0.4, "uv": [31, 35]},
+						{"origin": [-3, -1, 1.95], "size": [6, 1, 1], "inflate": -0.3, "uv": [0, 15]},
+						{"origin": [-3, 0.25, 1.95], "size": [6, 1, 1], "inflate": -0.3, "uv": [0, 33]},
+						{"origin": [-3, 1.5, 1.95], "size": [6, 1, 1], "inflate": -0.3, "uv": [20, 34]}
+					]
+				}
+			]
+		}
+	]
+}

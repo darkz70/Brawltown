@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dynamite.idle": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"dynamite": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.dynamite.hand": {
+			"loop": true,
+			"bones": {
+				"dynamite": {
+					"rotation": [-47.39118, -73.81575, -86.61738]
+				}
+			}
+		}
+	}
+}

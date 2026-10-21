@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.flare_gun_shoot": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "flare_gun_shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_flame_particle ~ ~-0.5 ~",
+			"/particle minecraft:obsidian_glow_dust_particle ~ ~-0.5 ~"
+
+
+          ]
+        },
+        "flare_gun_shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_flame_particle ~ ~-0.5 ~",
+			"/particle minecraft:obsidian_glow_dust_particle ~ ~-0.5 ~"
+          ]
+        }
+      }
+    }
+  }
+}

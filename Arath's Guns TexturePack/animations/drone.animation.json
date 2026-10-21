@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.drone.idle": {
+			"loop": true,
+			"animation_length": 0.24,
+			"bones": {
+				"ventilador1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 360, 0]
+					}
+				},
+				"ventilador2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 360, 0]
+					}
+				},
+				"ventilador3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 360, 0]
+					}
+				},
+				"ventilador4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}

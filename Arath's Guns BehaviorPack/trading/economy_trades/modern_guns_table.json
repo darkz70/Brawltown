@@ -1,0 +1,1028 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 61,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 8
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:glock_17"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:glock_17",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:glock_17_with_silencer"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:glock_17",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:glock_17",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dual_glock_17"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 17
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:glock_17_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:netherite_scrap",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:flare_gun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:skorpion"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:skorpion_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 32
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 52
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:desert_eagle"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_pesada",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:desert_eagle_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 45
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:tavor_21"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:tavor_21_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 20
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 23
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:shorty"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 39
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 55
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:pkm"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:m16_ammo",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:pkm_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 40
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 60
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m60"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:pkm_ammo",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m60_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal_block",
+                  "quantity": 9
+                },
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:minigun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:pkm_ammo",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "ironmanaddon:minigun_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 30
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 45
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:scar"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:scar",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:m203",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:scar_m203"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 60
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:scar_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:revolver"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 30
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:saiga_12"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:cartucho",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:saiga_12_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:m16",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:m203",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m16_m203"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m203"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 30
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m16"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m16_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 30
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m4a1"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:m4a1",
+                  "quantity": 42
+                },
+                {
+                  "item": "gunsaddon:shorty",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m4a1_shotgun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m4a1_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 30
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:grenade_launcher"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 35
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 40
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m202"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 35
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:rpg"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:rocket",
+                  "quantity": 4
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:m202_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 10
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:micro_uzi"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:micro_uzi",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:micro_uzi",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dual_micro_uzi"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:micro_uzi_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:uzi"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:uzi_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:gold_uzi"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:gold_uzi_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 42
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:ak47"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:ak47",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:shorty",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:ak47_shotgun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 40
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:ak47_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 26
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 40
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:spas"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 38
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:aa12"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:cartucho",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:aa12_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 22
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:barret_m82a1"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_pesada",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:barret_m82a1_ammo"
+                }
+              ]
+            },
+			{
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:barret_m82a1",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:spyglass",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:barret_m82a1_scope"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 35
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 60
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:g3sg1"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_pesada",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:g3sg1_ammo"
+                }
+              ]
+            },
+			{
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:g3sg1",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:spyglass",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:g3sg1_scope"
+                }
+              ]
+            },			
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 40
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mp5"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mp5_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 18
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:aac_honey_badger"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:aac_honey_badger_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:crying_obsidian",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:diamond",
+                  "quantity": 64
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:railgun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_pesada",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:crying_obsidian",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:railgun_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:sand",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dynamite",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
