@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "pa_gadshed_speed_effect",
+    "pa_gadshed_regenka_effect",
+    "pa_gadshed_strong_effect",
+    "pa_gasket_lovkach_effect",
+    "pa_gasket_podbros_effect",
+    "pa_absolute_sword_effect",
+    "pa_chip_brawler_brake_effect",
+    "pa_strong_brawler_2_s_effect",
+    "pa_el_primo_effect",
+    "pa_strong_brawler_2_regen_effect",
+    "pa_strong_brawler_2_speed_effect",
+    "pa_strong_brawler_3_s_effect",
+    "pa_strong_brawler_3_regen_effect",
+    "pa_strong_brawler_3_speed_effect"
+  ]
+}
