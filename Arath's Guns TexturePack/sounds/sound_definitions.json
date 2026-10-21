@@ -1,0 +1,229 @@
+{
+	"format_version": "1.16.0",
+	"sound_definitions": {
+		"gun.aac": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/aac"
+			]
+		},
+		"gun.minigun_loop": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/minigun_loop"
+			]
+		},
+		"gun.minigun_shoot": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/minigun"
+			]
+		},
+		"gun.g3sg1": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/g3sg1"
+			]
+		},
+		"gun.spas": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/spas"
+			]
+		},
+		"gun.glock_17_with_silencer": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/glock_17_with_silencer"
+			]
+		},
+		"gun.m60": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/m60"
+			]
+		},
+		"gun.contender": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/contender"
+			]
+		},
+		"gun.double_action_revolver": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/double_action_revolver"
+			]
+		},
+		"gun.barret_m82a1": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/barret_m82a1"
+			]
+		},
+		"gun.railgun": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/railgun"
+			]
+		},
+		"gun.mp5": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/mp5"
+			]
+		},
+		"gun.glock_17": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/glock_17"
+			]
+		},
+		"gun.skorpion": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/skorpion"
+			]
+		},
+		"gun.desert_eagle": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/desert_eagle"
+			]
+		},
+		"gun.shorty": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/escopeta_recortada"
+			]
+		},
+		"gun.tavor_21": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/tavor_21"
+			]
+		},
+		"gun.scar": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/scar"
+			]
+		},
+		"gun.m4a1": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/m4a1"
+			]
+		},
+		"gun.m16": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/m16"
+			]
+		},
+		"gun.ak47": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/ak47"
+			]
+		},
+		"gun.aa12": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/aa12"
+			]
+		},
+		"gun.revolver": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/revolver"
+			]
+		},
+		"gun.saiga_12": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/saiga_12"
+			]
+		},
+		"gun.grenade_shot": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/grenade_shot"
+			]
+		},
+		"gun.uzi": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/uzi"
+			]
+		},
+		"gun.shotgun": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/shotgun"
+			]
+		},
+		"gun.sturmgewehr44": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/sturmgewehr44"
+			]
+		},
+		"gun.mauser": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/mauser"
+			]
+		},
+		"gun.luger": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/luger"
+			]
+		},
+		"gun.thompson": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/thompson"
+			]
+		},
+		"gun.mp40": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/mp40"
+			]
+		},
+		"gun.springfield": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/springfield"
+			]
+		},
+		"gun.rocket": {
+			"category": "neutral",
+				"sounds": [
+					"sounds/guns/rocket"
+			]
+		},
+		"gun.empty": {
+			"category": "hostile",
+			"min_distance": 32,
+			"sounds": [
+				{
+					"name": "sounds/guns/empty",
+					"volume": 1
+				}
+			]
+		},
+		"bullet.hit": {
+			"category": "hostile",
+			"min_distance": 32,
+			"sounds": [
+				{
+					"name": "sounds/guns/hit",
+					"volume": 1
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,1 @@
+give @s pa:hromo_coin

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.m16_ammo",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "thompson",
+					"parent": "barrell",
+					"pivot": [-0.04167, 6.88438, 1.38115]
+				},
+				{
+					"name": "bone2",
+					"parent": "thompson",
+					"pivot": [0, 0, 2],
+					"cubes": [
+						{"origin": [-1, -7.541, -3.46333], "size": [2, 10, 6], "inflate": -0.225, "pivot": [0, 0.93576, -0.68471], "rotation": [-20, 0, 0], "uv": [0, 0]},
+						{"origin": [-1, 0.916, -3.19955], "size": [2, 4, 6], "inflate": -0.2, "uv": [50, 26]}
+					]
+				}
+			]
+		}
+	]
+}

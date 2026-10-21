@@ -1,0 +1,50 @@
+{
+	"entity_sounds": {
+		"entities": {
+      "leftforcraft:coronel_zombie": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "leftforcraft:soldier_tank": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "mob.zombie_tank.say",
+               "cast.spell" : "mob.zombie_tank.say",
+               "celebrate" : "mob.zombie_tank.say",
+          "hurt": "mob.zombie_tank.hurt",
+          "death": "mob.zombie_tank.death",
+          "step": {
+            "sound": "mob.irongolem.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "leftforcraft:soldier_zombie": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      }
+		}
+	}
+}

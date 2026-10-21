@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "droneaddon:caja_ammo",
+      "materials": { "caja": "skeleton" },
+      "textures": { "caja": "textures/entity/regalo_drone_ammo" },
+      "geometry": { "caja": "geometry.caja" },
+      "animations": {
+        "loop": "animation.drone.idle"
+      },
+      "animation_controllers": [
+        {
+          "loop": "controller.animation.loop"
+        }
+      ],
+      "render_controllers": [ "controller.render.caja" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "drone",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:mp5",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "mp5"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 50
+      },
+      "minecraft:enchantable": {
+        "slot": "bow",
+        "value": 5
+      },
+      "minecraft:cooldown": {
+        "category": "mp5",
+        "duration": 0.1
+      },
+      "minecraft:use_animation": "bow",
+      "minecraft:use_modifiers": {
+        "use_duration": 3600.0,
+        "movement_modifier": 1.0
+      },
+      "minecraft:display_name": {
+        "value": "H&K MP5"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "gun"
+        ]
+      }
+    }
+  }
+}

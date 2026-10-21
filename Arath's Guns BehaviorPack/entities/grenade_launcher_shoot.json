@@ -1,0 +1,97 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gunsaddon:grenade_launcher_shoot",
+      "runtime_identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "rocket": "controller.animation.rocket"
+      },
+      "scripts": {
+        "animate": [
+          "rocket"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "definition_event": {
+            "event_trigger": {
+              "event": "hit",
+              "target": "self"
+            }
+          }
+        },
+        "power": 3.5,
+        "gravity": 0.1,
+        "anchor": 1,
+        "destroy_on_hurt": true,
+        "uncertainty_base": 1,
+        "uncertainty_multiplier": 1,
+        "should_bounce": false,
+        "inertia": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "multiple_targets": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:navigation.float": {},
+      "minecraft:type_family": {
+        "family": [
+          "bullet"
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1.5,
+        "randomInterval": false,
+        "time_down_event": {
+          "event": "hit"
+        }
+      }
+    },
+    "component_groups": {
+      "hit": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 3,
+          "causes_fire": false,
+          "fire_affected_by_griefing": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "events": {
+      "hit": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "hit"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

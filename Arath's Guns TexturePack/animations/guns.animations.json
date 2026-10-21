@@ -1,0 +1,84 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.guns.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"position": [0, 34.5, 1],
+					"rotation": [-59.6924, -54.7637, 26.1419],
+					"scale": 1
+				}
+			}
+		},
+		"animation.ammo.off_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.guns.sniper_ui": {
+			"loop": true,
+			"bones": {
+				"springfield": {
+					"scale": 0
+				},
+				"mira": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.guns.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [90, 0, 0],
+					"position": [0, 20, 0],
+					"scale": 0.8
+				},
+				"glock_dual": {
+					"scale": 0.8
+				},
+				"pistol": {
+					"rotation": [0, 0, -7.5]
+				},
+				"pistol2": {
+					"scale": 0.8
+				},
+				"pistol3": {
+					"scale": 0
+				},
+				"mira": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.sniper.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [90, 0, 0],
+					"position": [0, 20, 0],
+					"scale": 0.8
+				},
+				"glock_dual": {
+					"scale": 0.8
+				},
+				"pistol": {
+					"rotation": [0, 0, -7.5]
+				},
+				"pistol2": {
+					"scale": 0.8
+				},
+				"pistol3": {
+					"scale": 0
+				},
+				"mira": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

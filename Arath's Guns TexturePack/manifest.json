@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Arath's Guns TexturePack",
+    "description": "Created by ArathNido (Updated for 1.26.13)",
+    "uuid": "7fcadb65-6e10-a561-9686-e9eb04efb3e7",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "3edf1b4e-a055-2bb7-143c-9a18ee5f1a3b",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "f0d73e08-d489-1714-c90b-763fe4a8ba10",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

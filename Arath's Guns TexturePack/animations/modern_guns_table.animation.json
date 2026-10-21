@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.modern_guns_table.idle": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"scale": [1.3, 1.3, 1.3]
+				},
+				"bone2": {
+					"position": [0.9, 6, 0]
+				},
+				"revolver": {
+					"position": [0, 4, 0]
+				}
+			}
+		}
+	}
+}

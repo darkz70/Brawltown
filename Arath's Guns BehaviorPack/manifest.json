@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Arath's Guns BehaviorPack",
+    "description": "Created by ArathNido (Updated for 1.26.13)",
+    "uuid": "f0d73e08-d489-1714-c90b-763fe4a8ba10",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "9994be70-7d74-ce92-1849-ab0ad51a0870",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "d84a91bc-4e32-4c7a-9b12-8a5ef0132456",
+      "entry": "scripts/main.js",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7fcadb65-6e10-a561-9686-e9eb04efb3e7",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.6.0"
+    }
+  ]
+}

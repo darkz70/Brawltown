@@ -1,0 +1,25 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:loran",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "pa:loran"
+        }
+      },
+      "minecraft:display_name": {
+        "value": " §2Лоран"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:hand_equipped": false,
+      "minecraft:glint": false,
+      "minecraft:stacked_by_data": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.railgun_0": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.railgun_0"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.remaining_durability == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gunsaddon:sturmgewehr44_shoot",
+      "runtime_identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "shoot": "controller.animation.shoot"
+      },
+      "scripts": {
+        "animate": [
+          "shoot"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "definition_event": {
+            "event_trigger": {
+              "event": "hit",
+              "target": "self"
+            }
+          },
+          "impact_damage": {
+            "damage": [
+              12,
+              12
+            ],
+            "knockback": true,
+            "destroy_on_hit": true,
+            "semi_random_diff_damage": false
+          },
+          "particle_on_hit": {
+            "num_particles": 5,
+            "on_entity_hit": true,
+            "particle_type": "reddust"
+          }
+        },
+        "power": 9.0,
+        "gravity": 0.001,
+        "anchor": 1,
+        "destroy_on_hurt": true,
+        "uncertainty_base": 1,
+        "uncertainty_multiplier": 1,
+        "should_bounce": false,
+        "inertia": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "multiple_targets": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:navigation.float": {},
+      "minecraft:type_family": {
+        "family": [
+          "bullet"
+        ]
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1.25,
+        "randomInterval": false,
+        "time_down_event": {
+          "event": "hit"
+        }
+      }
+    },
+    "component_groups": {
+      "hit": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      },
+      "timer_hit": {
+        "minecraft:timer": {
+          "looping": true,
+          "time": 1.5,
+          "randomInterval": false,
+          "time_down_event": {
+            "event": "hit"
+          }
+        }
+      }
+    },
+    "events": {
+      "timer_hit": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "timer_hit"
+              ]
+            }
+          }
+        ]
+      },
+      "hit": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "hit"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

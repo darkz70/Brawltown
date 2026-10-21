@@ -1,0 +1,45 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:dual_glock_17",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "dual_glock_17"
+        }
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 34
+      },
+      "minecraft:enchantable": {
+        "slot": "bow",
+        "value": 5
+      },
+      "minecraft:cooldown": {
+        "category": "dual_glock_17",
+        "duration": 0.325
+      },
+      "minecraft:use_animation": "bow",
+      "minecraft:use_modifiers": {
+        "use_duration": 3600.0,
+        "movement_modifier": 1.0
+      },
+      "minecraft:display_name": {
+        "value": "Dual Glock 17"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "dual_pistol",
+          "gun"
+        ]
+      }
+    }
+  }
+}
