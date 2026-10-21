@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pa:heard_town"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:friction": 0.5,
+      "minecraft:map_color": "#4D0809",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pa:heard_town",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 111111.0
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 15,
+      "minecraft:display_name": "Сердце Города"
+    }
+  }
+}

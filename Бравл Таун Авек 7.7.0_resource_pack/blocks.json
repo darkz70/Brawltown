@@ -1,0 +1,43 @@
+{
+  "pa:krystal_ore": {
+    "textures": "pa_krystal_ore",
+    "sound": "metal"
+  },
+  "pa:gem_ore": {
+    "textures": "pa_gem_ore",
+    "sound": "metal"
+  },
+  "pa:heard_town": {
+    "textures": "pa_heard_town",
+    "sound": "metal"
+  },
+  "pa:nif_ore": {
+    "textures": "pa_nif_ore",
+    "sound": "metal"
+  },
+  "pa:map_1": {
+    "textures": {
+      "up": "pa_map_1_up",
+      "down": "pa_map_1_down",
+      "side": "pa_map_1_side"
+    },
+    "sound": "normal"
+  },
+  "pa:map": {
+    "textures": {
+      "up": "pa_map_up",
+      "down": "pa_map_down",
+      "side": "pa_map_side"
+    },
+    "sound": "normal"
+  },
+  "pa:loran_ore": {
+    "textures": "pa_loran_ore",
+    "sound": "metal"
+  },
+  "format_version": [
+    1,
+    1,
+    0
+  ]
+}
