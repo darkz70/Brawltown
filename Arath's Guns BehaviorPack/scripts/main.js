@@ -773,8 +773,117 @@ const GUN_CONFIGS = {
   }
 };
 
+const EXPLOSIVE_PROJECTILES = new Set([
+  "gunsaddon:flare_gun_shoot",
+  "gunsaddon:grenade_launcher_shoot",
+  "gunsaddon:railgun_shoot",
+  "gunsaddon:rocket_shoot",
+  "gunsaddon:dynamite_entity",
+  "gunsaddon:grenade_m67_entity"
+]);
+
+const BREAKABLE_GLASS_ICE = new Set([
+  "minecraft:glass",
+  "minecraft:glass_pane",
+  "minecraft:tinted_glass",
+  "minecraft:ice",
+  "minecraft:packed_ice",
+  "minecraft:blue_ice",
+  "minecraft:frosted_ice"
+]);
+
 const activeShooters = new Map();
 const lastShotTick = new Map();
+const trackedProjectiles = new Map();
+
+function isBreakableByBullet(block) {
+  if (!block) return false;
+  const id = block.typeId;
+  if (BREAKABLE_GLASS_ICE.has(id)) return true;
+  if (id.endsWith("_stained_glass") || id.endsWith("_stained_glass_pane")) return true;
+  return false;
+}
+
+function applySpread(dir, uncertaintyDeg) {
+  if (!uncertaintyDeg || uncertaintyDeg <= 0) {
+    return { x: dir.x, y: dir.y, z: dir.z };
+  }
+  const spreadRad = (uncertaintyDeg * Math.PI) / 180 * 0.35;
+  const rx = (Math.random() - 0.5) * 2 * spreadRad;
+  const ry = (Math.random() - 0.5) * 2 * spreadRad;
+  const rz = (Math.random() - 0.5) * 2 * spreadRad;
+  const vx = dir.x + rx;
+  const vy = dir.y + ry;
+  const vz = dir.z + rz;
+  const len = Math.hypot(vx, vy, vz) || 1;
+  return { x: vx / len, y: vy / len, z: vz / len };
+}
+
+function findSolidWallHit(dimension, origin, dir, maxDistance = 120) {
+  let curOrigin = { x: origin.x, y: origin.y, z: origin.z };
+  let remaining = maxDistance;
+  for (let iter = 0; iter < 4 && remaining > 0.05; iter++) {
+    let hit;
+    try {
+      hit = dimension.getBlockFromRay(curOrigin, dir, {
+        maxDistance: remaining,
+        includePassableBlocks: false,
+        includeLiquidBlocks: false
+      });
+    } catch {
+      break;
+    }
+    if (!hit || !hit.block) {
+      return undefined;
+    }
+    const hitPoint = {
+      x: hit.block.location.x + (hit.faceLocation?.x ?? 0.5),
+      y: hit.block.location.y + (hit.faceLocation?.y ?? 0.5),
+      z: hit.block.location.z + (hit.faceLocation?.z ?? 0.5)
+    };
+    const distFromStart = Math.hypot(
+      hitPoint.x - origin.x,
+      hitPoint.y - origin.y,
+      hitPoint.z - origin.z
+    );
+    if (isBreakableByBullet(hit.block)) {
+      try {
+        dimension.runCommand(
+          `fill ${hit.block.location.x} ${hit.block.location.y} ${hit.block.location.z} ${hit.block.location.x} ${hit.block.location.y} ${hit.block.location.z} air [] destroy`
+        );
+      } catch {}
+      curOrigin = {
+        x: hitPoint.x + dir.x * 0.15,
+        y: hitPoint.y + dir.y * 0.15,
+        z: hitPoint.z + dir.z * 0.15
+      };
+      remaining = maxDistance - distFromStart - 0.15;
+      continue;
+    }
+    return {
+      block: hit.block,
+      hitPoint,
+      distance: distFromStart
+    };
+  }
+  return undefined;
+}
+
+function hasEntityBeforeWall(dimension, player, origin, dir, wallDist) {
+  if (wallDist <= 0.05) return false;
+  try {
+    const hits = dimension.getEntitiesFromRay(origin, dir, {
+      maxDistance: wallDist,
+      ignoreBlockCollision: false
+    });
+    for (const h of hits) {
+      if (h.entity && h.entity.id !== player.id && h.distance < wallDist) {
+        return true;
+      }
+    }
+  } catch {}
+  return false;
+}
 
 function getEquipInventory(player) {
   return player.getComponent(EntityComponentTypes.Equippable);
@@ -858,34 +967,81 @@ function consumeAmmoFromOffhandOrInventory(player, ammoId, neededCount) {
 
 function spawnProjectiles(player, projId, count, power, uncertainty, sound) {
   const head = player.getHeadLocation();
-  const dir = player.getViewDirection();
-  const spawnPos = {
-    x: head.x + dir.x * 1.2,
-    y: head.y + dir.y * 1.2 - 0.1,
-    z: head.z + dir.z * 1.2
-  };
+  const baseDir = player.getViewDirection();
+  const isExplosive = EXPLOSIVE_PROJECTILES.has(projId);
+  const baseSpeed = Math.min(power || 4.0, 4.0);
+
   for (let i = 0; i < count; i++) {
+    const spreadAmount = count > 1 ? Math.max(uncertainty, 4.0) : (uncertainty > 1 ? uncertainty : 0.4);
+    const shotDir = applySpread(baseDir, spreadAmount);
+    const wallHit = findSolidWallHit(player.dimension, head, shotDir, 120);
+    const wallDist = wallHit ? wallHit.distance : 999;
+    const entityInFront = wallHit ? hasEntityBeforeWall(player.dimension, player, head, shotDir, wallDist) : true;
+
+    // If a wall is right in front of the player (or within 1 tick's travel) and no entity is in front of that wall,
+    // stop the shot right at the near face of the wall so it can NEVER pass through the wall!
+    if (wallHit && !entityInFront && wallDist <= baseSpeed + 0.6) {
+      const impactPos = {
+        x: wallHit.hitPoint.x - shotDir.x * 0.15,
+        y: wallHit.hitPoint.y - shotDir.y * 0.15,
+        z: wallHit.hitPoint.z - shotDir.z * 0.15
+      };
+      if (isExplosive) {
+        try {
+          const proj = player.dimension.spawnEntity(projId, impactPos);
+          const projComp = proj.getComponent(EntityComponentTypes.Projectile);
+          if (projComp) projComp.owner = player;
+          proj.triggerEvent("hit");
+        } catch {}
+      } else {
+        try {
+          player.dimension.spawnParticle("minecraft:basic_smoke_particle", impactPos);
+          player.dimension.playSound("bullet.hit", impactPos);
+        } catch {}
+      }
+      continue;
+    }
+
+    const spawnOffset = Math.min(0.45, Math.max(0.15, wallDist - 0.3));
+    const spawnPos = {
+      x: head.x + shotDir.x * spawnOffset,
+      y: head.y + shotDir.y * spawnOffset - 0.05,
+      z: head.z + shotDir.z * spawnOffset
+    };
+
     try {
       const proj = player.dimension.spawnEntity(projId, spawnPos);
       const projComp = proj.getComponent(EntityComponentTypes.Projectile);
       if (projComp) {
         projComp.owner = player;
+        const speed = wallHit ? Math.min(baseSpeed, Math.max(0.5, wallDist - spawnOffset - 0.1)) : baseSpeed;
         projComp.shoot(
           {
-            x: dir.x * power,
-            y: dir.y * power,
-            z: dir.z * power
+            x: shotDir.x * speed,
+            y: shotDir.y * speed,
+            z: shotDir.z * speed
           },
-          { uncertainty: count > 1 ? Math.max(uncertainty, 4.0) : uncertainty }
+          { uncertainty: 0 }
         );
       }
+      trackedProjectiles.set(proj.id, {
+        entity: proj,
+        origin: { x: head.x, y: head.y, z: head.z },
+        prevPos: { x: spawnPos.x, y: spawnPos.y, z: spawnPos.z },
+        shotDir,
+        maxDist: wallHit ? Math.max(0.2, wallDist - 0.1) : 120,
+        isExplosive,
+        spawnTick: system.currentTick
+      });
     } catch {}
   }
+
+  const muzzleDist = 0.8;
   try {
     player.dimension.spawnParticle("minecraft:basic_smoke_particle", {
-      x: head.x + dir.x * 2.0,
-      y: head.y + dir.y * 2.0,
-      z: head.z + dir.z * 2.0
+      x: head.x + baseDir.x * muzzleDist,
+      y: head.y + baseDir.y * muzzleDist,
+      z: head.z + baseDir.z * muzzleDist
     });
   } catch {}
   try {
@@ -912,7 +1068,6 @@ function handleGunUse(player, itemStack) {
   const equip = getEquipInventory(player);
   if (!equip) return;
 
-  // Check alternate underbarrel fire (sneaking + offhand ammo)
   if (cfg.altFire && player.isSneaking) {
     const offhand = equip.getEquipment(EquipmentSlot.Offhand);
     if (offhand && offhand.typeId === cfg.altFire.ammo) {
@@ -942,7 +1097,6 @@ function handleGunUse(player, itemStack) {
   let remaining = getAmmoState(itemStack, maxAmmo);
 
   if (remaining <= 0) {
-    // Attempt reload
     if (cfg.reloadItem && consumeAmmoFromOffhandOrInventory(player, cfg.reloadItem, cfg.reloadCount || 1)) {
       setAmmoState(itemStack, maxAmmo, maxAmmo);
       equip.setEquipment(EquipmentSlot.Mainhand, itemStack);
@@ -959,7 +1113,6 @@ function handleGunUse(player, itemStack) {
     return;
   }
 
-  // Fire 1 round
   remaining -= 1;
   setAmmoState(itemStack, remaining, maxAmmo);
   equip.setEquipment(EquipmentSlot.Mainhand, itemStack);
@@ -979,6 +1132,40 @@ function handleGunUse(player, itemStack) {
     player.onScreenDisplay.setActionBar(`§l§c[§f${remaining}§c/§f${maxAmmo}§c]§r`);
   }
 }
+
+world.afterEvents.projectileHitBlock.subscribe((ev) => {
+  const proj = ev.projectile;
+  if (!proj || !proj.isValid) return;
+  const typeId = proj.typeId;
+  if (!typeId || !typeId.startsWith("gunsaddon:")) return;
+  trackedProjectiles.delete(proj.id);
+  if (EXPLOSIVE_PROJECTILES.has(typeId)) {
+    try {
+      proj.triggerEvent("hit");
+    } catch {}
+  } else {
+    try {
+      proj.remove();
+    } catch {}
+  }
+});
+
+world.afterEvents.projectileHitEntity.subscribe((ev) => {
+  const proj = ev.projectile;
+  if (!proj || !proj.isValid) return;
+  const typeId = proj.typeId;
+  if (!typeId || !typeId.startsWith("gunsaddon:")) return;
+  trackedProjectiles.delete(proj.id);
+  if (EXPLOSIVE_PROJECTILES.has(typeId)) {
+    try {
+      proj.triggerEvent("hit");
+    } catch {}
+  } else {
+    try {
+      proj.remove();
+    } catch {}
+  }
+});
 
 world.afterEvents.itemUse.subscribe((ev) => {
   const player = ev.source;
@@ -1026,6 +1213,61 @@ world.afterEvents.itemCompleteUse.subscribe((ev) => {
 });
 
 system.runInterval(() => {
+  const now = system.currentTick;
+  for (const [projId, info] of trackedProjectiles.entries()) {
+    const proj = info.entity;
+    if (!proj || !proj.isValid || now - info.spawnTick > 40) {
+      trackedProjectiles.delete(projId);
+      continue;
+    }
+    const loc = proj.location;
+    const dx = loc.x - info.prevPos.x;
+    const dy = loc.y - info.prevPos.y;
+    const dz = loc.z - info.prevPos.z;
+    const stepDist = Math.hypot(dx, dy, dz);
+    if (stepDist > 0.05) {
+      const stepDir = { x: dx / stepDist, y: dy / stepDist, z: dz / stepDist };
+      const blockHit = findSolidWallHit(proj.dimension, info.prevPos, stepDir, stepDist + 0.2);
+      if (blockHit) {
+        trackedProjectiles.delete(projId);
+        if (info.isExplosive) {
+          try {
+            proj.teleport({
+              x: blockHit.hitPoint.x - stepDir.x * 0.15,
+              y: blockHit.hitPoint.y - stepDir.y * 0.15,
+              z: blockHit.hitPoint.z - stepDir.z * 0.15
+            });
+            proj.triggerEvent("hit");
+          } catch {}
+        } else {
+          try {
+            proj.remove();
+          } catch {}
+        }
+        continue;
+      }
+    }
+    const totalDist = Math.hypot(
+      loc.x - info.origin.x,
+      loc.y - info.origin.y,
+      loc.z - info.origin.z
+    );
+    if (totalDist >= info.maxDist) {
+      trackedProjectiles.delete(projId);
+      if (info.isExplosive) {
+        try {
+          proj.triggerEvent("hit");
+        } catch {}
+      } else {
+        try {
+          proj.remove();
+        } catch {}
+      }
+      continue;
+    }
+    info.prevPos = { x: loc.x, y: loc.y, z: loc.z };
+  }
+
   for (const [id, player] of activeShooters.entries()) {
     if (!player || !player.isValid) {
       activeShooters.delete(id);

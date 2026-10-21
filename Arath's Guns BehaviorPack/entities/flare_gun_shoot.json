@@ -54,7 +54,8 @@
             "num_particles": 5,
             "on_entity_hit": true,
             "particle_type": "reddust"
-          }
+          },
+          "stick_in_ground": {}
         },
         "power": 0.5,
         "gravity": 0.0025,
@@ -69,14 +70,14 @@
           0,
           0
         ],
-        "multiple_targets": true
+        "multiple_targets": false,
+        "stop_on_hurt": true
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": false
       },
-      "minecraft:navigation.float": {},
       "minecraft:type_family": {
         "family": [
           "bullet"

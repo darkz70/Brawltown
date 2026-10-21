@@ -23,7 +23,8 @@
               "event": "hit",
               "target": "self"
             }
-          }
+          },
+          "stick_in_ground": {}
         },
         "power": 1.1,
         "gravity": 0.03,
@@ -38,14 +39,14 @@
           -1,
           0
         ],
-        "multiple_targets": true
+        "multiple_targets": false,
+        "stop_on_hurt": true
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": false
       },
-      "minecraft:navigation.float": {},
       "minecraft:type_family": {
         "family": [
           "bullet"

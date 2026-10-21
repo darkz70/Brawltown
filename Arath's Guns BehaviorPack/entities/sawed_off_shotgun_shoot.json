@@ -37,7 +37,8 @@
             "knockback": true,
             "destroy_on_hit": true,
             "semi_random_diff_damage": false
-          }
+          },
+          "remove_on_hit": {}
         },
         "hit_sound": "gun.impact",
         "power": 18.0,
@@ -52,14 +53,14 @@
           0.5,
           0
         ],
-        "multiple_targets": true
+        "multiple_targets": false,
+        "stop_on_hurt": true
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": false
       },
-      "minecraft:navigation.float": {},
       "minecraft:type_family": {
         "family": [
           "bullet"

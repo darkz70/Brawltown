@@ -46,7 +46,8 @@
               "target": "self",
               "event": "minecraft:explode"
             }
-          }
+          },
+          "stick_in_ground": {}
         },
         "power": 1.1,
         "gravity": 0.03,
@@ -57,7 +58,10 @@
           0,
           0.2,
           0
-        ]
+        ],
+        "multiple_targets": false,
+        "should_bounce": false,
+        "stop_on_hurt": true
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
@@ -78,9 +82,6 @@
             "deals_damage": false
           }
         ]
-      },
-      "minecraft:navigation.float": {
-        "can_path_over_water": true
       },
       "minecraft:movement.basic": {
         "max_turn": 0
