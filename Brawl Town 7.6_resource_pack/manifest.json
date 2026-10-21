@@ -1,0 +1,51 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "perfect add-on for Minecraft  by verte82",
+    "name": "Brawl Town 7.6",
+    "uuid": "d8dce696-ec2b-4bfa-849e-f45e8647fe9e",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "description": "perfect add-on for Minecraft  by verte82",
+      "type": "resources",
+      "uuid": "8f1e4d01-bc84-418d-aeb7-222b7ca7cfc4",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "cb039cd4-5b12-487e-85b1-2b17d21f254b",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "verte82"
+    ],
+    "generated_with": {
+      "MAM": [
+        "4.0.7"
+      ]
+    },
+    "url": "https://addonsmaker.com/"
+  }
+}

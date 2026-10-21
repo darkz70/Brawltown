@@ -1,0 +1,1 @@
+give @s pa:nif_ore

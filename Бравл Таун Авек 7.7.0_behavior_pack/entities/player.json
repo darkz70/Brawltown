@@ -1,0 +1,3478 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "spawn_category": "creature",
+      "is_spawnable": false,
+      "is_summonable": false
+    },
+    "component_groups": {
+      "minecraft:add_raid_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "raid_omen",
+              "duration": 30,
+              "display_on_screen_animation": true
+            }
+          ],
+          "remove_effects": "bad_omen"
+        },
+        "minecraft:timer": {
+          "time": [
+            0.0,
+            0.0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_raid_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_raid_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        }
+      },
+      "pamobile:respawn": {
+        "minecraft:mark_variant": {
+          "value": 99999
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "speed",
+            "regeneration",
+            "strength",
+            "jump_boost",
+            "slowness"
+          ]
+        }
+      },
+      "ammo:1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "pa:gem_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gem_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:krystal_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gem_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:phoenix_did": {
+        "minecraft:health": {
+          "value": 21,
+          "max": 21
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:phoenix_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:krystal_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:kristal_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stone_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stone_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:phoenix_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stone_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:grom_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:rainbow_did": {
+        "minecraft:health": {
+          "value": 2,
+          "max": 2
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:grom_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:rainbow_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:krystal_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gem_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:chto_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:maga_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:kaktus_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:fhoenix_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gadshed_speed": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 5,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:rainbow_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:nikel_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stone_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:geme_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dint_sword1": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dint_sword2": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:legend_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gadshed_regenka": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:gadshed_strong": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:rainbow_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:grawi_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:krystal_pixe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "coal_ore",
+            "diamond_ore",
+            "emerald_ore",
+            "gold_ore",
+            "iron_ore",
+            "lapis_ore",
+            "quartz_ore",
+            "redstone_ore",
+            "pa:gem_ore",
+            "pa:krystal_ore",
+            "repeating_command_block",
+            "pa:nif_ore",
+            "deepslate_coal_ore",
+            "cobblestone",
+            "pa:heard_town",
+            "pa:loran_ore",
+            "stone"
+          ]
+        }
+      },
+      "pa:geml_pixe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stoner_copie_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gaechniu_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:adskai_lopata_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:serebrainnai_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gem_topor_sword": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:stone_topor_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:zlo_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:moon_sword_topor": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:mexa_sword_topor": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:krystal_lopata_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:molot": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:diamond_knight": {
+        "minecraft:health": {
+          "value": 24,
+          "max": 24
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gasket_lovkach": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "jump_boost",
+              "duration": 60000,
+              "amplifier": 8,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 3,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:gasket_razvorot": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:gasket_podbros": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "jump_boost",
+              "duration": 60000,
+              "amplifier": 8,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:water_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:tehmo_magma_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:kristal_did_ogranenyi": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:tehmo_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:tehmo_kosmo_dark_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:nif_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:absolute_sword": {
+        "minecraft:health": {
+          "value": 26,
+          "max": 26
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 999,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:nif_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:prism_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:nif_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dark_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:prism_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dark_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:prism_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:prism_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:teste_me": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dark_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:strong_brawler_1": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:loran_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:sand_pixe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "coal_ore",
+            "diamond_ore",
+            "emerald_ore",
+            "gold_ore",
+            "iron_ore",
+            "lapis_ore",
+            "quartz_ore",
+            "redstone_ore",
+            "pa:gem_ore",
+            "pa:krystal_ore",
+            "repeating_command_block",
+            "pa:nif_ore",
+            "deepslate_coal_ore",
+            "cobblestone",
+            "pa:heard_town",
+            "pa:loran_ore",
+            "stone"
+          ]
+        }
+      },
+      "pa:lonar_axe": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:dark_axe": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:loran_ponji": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:loran_boots": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:loran_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:copper_sword": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:nif_pixe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "coal_ore",
+            "diamond_ore",
+            "emerald_ore",
+            "gold_ore",
+            "iron_ore",
+            "lapis_ore",
+            "quartz_ore",
+            "redstone_ore",
+            "pa:gem_ore",
+            "pa:krystal_ore",
+            "repeating_command_block",
+            "pa:nif_ore",
+            "deepslate_coal_ore",
+            "cobblestone",
+            "pa:heard_town",
+            "pa:loran_ore",
+            "stone"
+          ]
+        }
+      },
+      "pa:loran_pixe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:strong_brawler_2_s": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:chip_brawler_brake": {
+        "minecraft:health": {
+          "value": 18,
+          "max": 18
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "slowness",
+              "duration": 60000,
+              "amplifier": 2,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:chip_brawler": {
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:el_primo": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "jump_boost",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            },
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:strong_brawler_2_regen": {
+        "minecraft:health": {
+          "value": 32,
+          "max": 32
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:strong_brawler_2_protection": {
+        "minecraft:health": {
+          "value": 34,
+          "max": 34
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:strong_brawler_3_protection": {
+        "minecraft:health": {
+          "value": 38,
+          "max": 38
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "pa:strong_brawler_3_s": {
+        "minecraft:health": {
+          "value": 34,
+          "max": 34
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "strength",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:strong_brawler_3_regen": {
+        "minecraft:health": {
+          "value": 36,
+          "max": 36
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "regeneration",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:strong_brawler_2_speed": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 0,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:strong_brawler_3_speed": {
+        "minecraft:health": {
+          "value": 32,
+          "max": 32
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "speed",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "pa:nif_did": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.05,
+        "sprint_jump": 0.2,
+        "mine": 0.005,
+        "attack": 0.1,
+        "damage": 0.1,
+        "walk": 0.0,
+        "sprint": 0.1,
+        "swim": 0.01
+      },
+      "minecraft:player.saturation": {
+        "value": 5,
+        "max": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 20
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "push_towards_closest_space": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:gain_raid_omen"
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "pamobile:refresh_player"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:gem_did"
+                }
+              ]
+            },
+            "event": "pa:gem_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:gem_boots"
+                }
+              ]
+            },
+            "event": "pa:gem_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:krystal_boots"
+                }
+              ]
+            },
+            "event": "pa:krystal_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:gem_ponji"
+                }
+              ]
+            },
+            "event": "pa:gem_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:phoenix_did"
+                }
+              ]
+            },
+            "event": "pa:phoenix_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:phoenix_ponji"
+                }
+              ]
+            },
+            "event": "pa:phoenix_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:krystal_ponji"
+                }
+              ]
+            },
+            "event": "pa:krystal_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:kristal_did"
+                }
+              ]
+            },
+            "event": "pa:kristal_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:stone_boots"
+                }
+              ]
+            },
+            "event": "pa:stone_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:stone_did"
+                }
+              ]
+            },
+            "event": "pa:stone_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:phoenix_boots"
+                }
+              ]
+            },
+            "event": "pa:phoenix_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:stone_ponji"
+                }
+              ]
+            },
+            "event": "pa:stone_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:grom_boots"
+                }
+              ]
+            },
+            "event": "pa:grom_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:rainbow_did"
+                }
+              ]
+            },
+            "event": "pa:rainbow_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:grom_ponji"
+                }
+              ]
+            },
+            "event": "pa:grom_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:rainbow_ponji"
+                }
+              ]
+            },
+            "event": "pa:rainbow_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:krystal_sword"
+                }
+              ]
+            },
+            "event": "pa:krystal_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gem_sword"
+                }
+              ]
+            },
+            "event": "pa:gem_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:chto_sword"
+                }
+              ]
+            },
+            "event": "pa:chto_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:maga_sword"
+                }
+              ]
+            },
+            "event": "pa:maga_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:kaktus_sword"
+                }
+              ]
+            },
+            "event": "pa:kaktus_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:fhoenix_sword"
+                }
+              ]
+            },
+            "event": "pa:fhoenix_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gadshed_speed"
+                }
+              ]
+            },
+            "event": "pa:gadshed_speed_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:rainbow_boots"
+                }
+              ]
+            },
+            "event": "pa:rainbow_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:nikel_sword"
+                }
+              ]
+            },
+            "event": "pa:nikel_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:stone_sword"
+                }
+              ]
+            },
+            "event": "pa:stone_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:geme_sword"
+                }
+              ]
+            },
+            "event": "pa:geme_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:dint_sword1"
+                }
+              ]
+            },
+            "event": "pa:dint_sword1_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:dint_sword2"
+                }
+              ]
+            },
+            "event": "pa:dint_sword2_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:legend_sword"
+                }
+              ]
+            },
+            "event": "pa:legend_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gadshed_regenka"
+                }
+              ]
+            },
+            "event": "pa:gadshed_regenka_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gadshed_strong"
+                }
+              ]
+            },
+            "event": "pa:gadshed_strong_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:rainbow_sword"
+                }
+              ]
+            },
+            "event": "pa:rainbow_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:grawi_sword"
+                }
+              ]
+            },
+            "event": "pa:grawi_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:krystal_pixe"
+                }
+              ]
+            },
+            "event": "pa:krystal_pixe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:geml_pixe"
+                }
+              ]
+            },
+            "event": "pa:geml_pixe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:stoner_copie_sword"
+                }
+              ]
+            },
+            "event": "pa:stoner_copie_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gaechniu_sword"
+                }
+              ]
+            },
+            "event": "pa:gaechniu_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:adskai_lopata_sword"
+                }
+              ]
+            },
+            "event": "pa:adskai_lopata_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:serebrainnai_sword"
+                }
+              ]
+            },
+            "event": "pa:serebrainnai_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gem_topor_sword"
+                }
+              ]
+            },
+            "event": "pa:gem_topor_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:stone_topor_sword"
+                }
+              ]
+            },
+            "event": "pa:stone_topor_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:zlo_sword"
+                }
+              ]
+            },
+            "event": "pa:zlo_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:moon_sword_topor"
+                }
+              ]
+            },
+            "event": "pa:moon_sword_topor_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:mexa_sword_topor"
+                }
+              ]
+            },
+            "event": "pa:mexa_sword_topor_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:krystal_lopata_sword"
+                }
+              ]
+            },
+            "event": "pa:krystal_lopata_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:molot"
+                }
+              ]
+            },
+            "event": "pa:molot_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:diamond_knight"
+                }
+              ]
+            },
+            "event": "pa:diamond_knight_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gasket_lovkach"
+                }
+              ]
+            },
+            "event": "pa:gasket_lovkach_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gasket_razvorot"
+                }
+              ]
+            },
+            "event": "pa:gasket_razvorot_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:gasket_podbros"
+                }
+              ]
+            },
+            "event": "pa:gasket_podbros_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:water_sword"
+                }
+              ]
+            },
+            "event": "pa:water_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:tehmo_magma_sword"
+                }
+              ]
+            },
+            "event": "pa:tehmo_magma_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:kristal_did_ogranenyi"
+                }
+              ]
+            },
+            "event": "pa:kristal_did_ogranenyi_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:tehmo_sword"
+                }
+              ]
+            },
+            "event": "pa:tehmo_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:tehmo_kosmo_dark_sword"
+                }
+              ]
+            },
+            "event": "pa:tehmo_kosmo_dark_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:nif_sword"
+                }
+              ]
+            },
+            "event": "pa:nif_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:absolute_sword"
+                }
+              ]
+            },
+            "event": "pa:absolute_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:nif_ponji"
+                }
+              ]
+            },
+            "event": "pa:nif_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:prism_sword"
+                }
+              ]
+            },
+            "event": "pa:prism_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:nif_boots"
+                }
+              ]
+            },
+            "event": "pa:nif_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:dark_did"
+                }
+              ]
+            },
+            "event": "pa:dark_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:prism_did"
+                }
+              ]
+            },
+            "event": "pa:prism_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:dark_ponji"
+                }
+              ]
+            },
+            "event": "pa:dark_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:prism_ponji"
+                }
+              ]
+            },
+            "event": "pa:prism_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:prism_boots"
+                }
+              ]
+            },
+            "event": "pa:prism_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:teste_me"
+                }
+              ]
+            },
+            "event": "pa:teste_me_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:dark_boots"
+                }
+              ]
+            },
+            "event": "pa:dark_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_1"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_1_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:loran_sword"
+                }
+              ]
+            },
+            "event": "pa:loran_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:sand_pixe"
+                }
+              ]
+            },
+            "event": "pa:sand_pixe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:lonar_axe"
+                }
+              ]
+            },
+            "event": "pa:lonar_axe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:dark_axe"
+                }
+              ]
+            },
+            "event": "pa:dark_axe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:loran_ponji"
+                }
+              ]
+            },
+            "event": "pa:loran_ponji_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:loran_boots"
+                }
+              ]
+            },
+            "event": "pa:loran_boots_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:loran_did"
+                }
+              ]
+            },
+            "event": "pa:loran_did_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:copper_sword"
+                }
+              ]
+            },
+            "event": "pa:copper_sword_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:nif_pixe"
+                }
+              ]
+            },
+            "event": "pa:nif_pixe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:loran_pixe"
+                }
+              ]
+            },
+            "event": "pa:loran_pixe_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_2_s"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_2_s_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:chip_brawler_brake"
+                }
+              ]
+            },
+            "event": "pa:chip_brawler_brake_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:chip_brawler"
+                }
+              ]
+            },
+            "event": "pa:chip_brawler_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "pa:el_primo"
+                }
+              ]
+            },
+            "event": "pa:el_primo_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_2_regen"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_2_regen_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_2_protection"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_2_protection_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_3_protection"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_3_protection_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_3_s"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_3_s_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_3_regen"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_3_regen_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_2_speed"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_2_speed_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "armor",
+                  "value": "pa:strong_brawler_3_speed"
+                }
+              ]
+            },
+            "event": "pa:strong_brawler_3_speed_event"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "any",
+                  "operator": "equals",
+                  "value": "pa:nif_did"
+                }
+              ]
+            },
+            "event": "pa:nif_did_event"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:gain_raid_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_raid_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_raid_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_raid_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "pamobile:refresh_player": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "pa:gem_did",
+            "pa:gem_boots",
+            "pa:krystal_boots",
+            "pa:gem_ponji",
+            "pa:phoenix_did",
+            "pa:phoenix_ponji",
+            "pa:krystal_ponji",
+            "pa:kristal_did",
+            "pa:stone_boots",
+            "pa:stone_did",
+            "pa:phoenix_boots",
+            "pa:stone_ponji",
+            "pa:grom_boots",
+            "pa:rainbow_did",
+            "pa:grom_ponji",
+            "pa:rainbow_ponji",
+            "pa:krystal_sword",
+            "pa:gem_sword",
+            "pa:chto_sword",
+            "pa:maga_sword",
+            "pa:kaktus_sword",
+            "pa:fhoenix_sword",
+            "pa:gadshed_speed",
+            "pa:rainbow_boots",
+            "pa:nikel_sword",
+            "pa:stone_sword",
+            "pa:geme_sword",
+            "pa:dint_sword1",
+            "pa:dint_sword2",
+            "pa:legend_sword",
+            "pa:gadshed_regenka",
+            "pa:gadshed_strong",
+            "pa:rainbow_sword",
+            "pa:grawi_sword",
+            "pa:krystal_pixe",
+            "pa:geml_pixe",
+            "pa:stoner_copie_sword",
+            "pa:gaechniu_sword",
+            "pa:adskai_lopata_sword",
+            "pa:serebrainnai_sword",
+            "pa:gem_topor_sword",
+            "pa:stone_topor_sword",
+            "pa:zlo_sword",
+            "pa:moon_sword_topor",
+            "pa:mexa_sword_topor",
+            "pa:krystal_lopata_sword",
+            "pa:molot",
+            "pa:diamond_knight",
+            "pa:gasket_lovkach",
+            "pa:gasket_razvorot",
+            "pa:gasket_podbros",
+            "pa:water_sword",
+            "pa:tehmo_magma_sword",
+            "pa:kristal_did_ogranenyi",
+            "pa:tehmo_sword",
+            "pa:tehmo_kosmo_dark_sword",
+            "pa:nif_sword",
+            "pa:absolute_sword",
+            "pa:nif_ponji",
+            "pa:prism_sword",
+            "pa:nif_boots",
+            "pa:dark_did",
+            "pa:prism_did",
+            "pa:dark_ponji",
+            "pa:prism_ponji",
+            "pa:prism_boots",
+            "pa:teste_me",
+            "pa:dark_boots",
+            "pa:strong_brawler_1",
+            "pa:loran_sword",
+            "pa:sand_pixe",
+            "pa:lonar_axe",
+            "pa:dark_axe",
+            "pa:loran_ponji",
+            "pa:loran_boots",
+            "pa:loran_did",
+            "pa:copper_sword",
+            "pa:nif_pixe",
+            "pa:loran_pixe",
+            "pa:strong_brawler_2_s",
+            "pa:chip_brawler_brake",
+            "pa:chip_brawler",
+            "pa:el_primo",
+            "pa:strong_brawler_2_regen",
+            "pa:strong_brawler_2_protection",
+            "pa:strong_brawler_3_protection",
+            "pa:strong_brawler_3_s",
+            "pa:strong_brawler_3_regen",
+            "pa:strong_brawler_2_speed",
+            "pa:strong_brawler_3_speed",
+            "pa:nif_did"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {}
+      },
+      "ammo:1": {
+        "remove": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        }
+      },
+      "ammo:2": {
+        "remove": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        }
+      },
+      "pa:gem_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:gem_did"
+          ]
+        }
+      },
+      "pa:gem_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:gem_boots"
+          ]
+        }
+      },
+      "pa:krystal_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:krystal_boots"
+          ]
+        }
+      },
+      "pa:gem_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:gem_ponji"
+          ]
+        }
+      },
+      "pa:phoenix_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:phoenix_did"
+          ]
+        }
+      },
+      "pa:phoenix_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:phoenix_ponji"
+          ]
+        }
+      },
+      "pa:krystal_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:krystal_ponji"
+          ]
+        }
+      },
+      "pa:kristal_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:kristal_did"
+          ]
+        }
+      },
+      "pa:stone_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:stone_boots"
+          ]
+        }
+      },
+      "pa:stone_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:stone_did"
+          ]
+        }
+      },
+      "pa:phoenix_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:phoenix_boots"
+          ]
+        }
+      },
+      "pa:stone_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:stone_ponji"
+          ]
+        }
+      },
+      "pa:grom_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:grom_boots"
+          ]
+        }
+      },
+      "pa:rainbow_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:rainbow_did"
+          ]
+        }
+      },
+      "pa:grom_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:grom_ponji"
+          ]
+        }
+      },
+      "pa:rainbow_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:rainbow_ponji"
+          ]
+        }
+      },
+      "pa:krystal_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:krystal_sword"
+          ]
+        }
+      },
+      "pa:gem_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:gem_sword"
+          ]
+        }
+      },
+      "pa:chto_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:chto_sword"
+          ]
+        }
+      },
+      "pa:maga_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:maga_sword"
+          ]
+        }
+      },
+      "pa:kaktus_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:kaktus_sword"
+          ]
+        }
+      },
+      "pa:fhoenix_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:fhoenix_sword"
+          ]
+        }
+      },
+      "pa:gadshed_speed_event": {
+        "add": {
+          "component_groups": [
+            "pa:gadshed_speed"
+          ]
+        }
+      },
+      "pa:rainbow_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:rainbow_boots"
+          ]
+        }
+      },
+      "pa:nikel_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:nikel_sword"
+          ]
+        }
+      },
+      "pa:stone_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:stone_sword"
+          ]
+        }
+      },
+      "pa:geme_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:geme_sword"
+          ]
+        }
+      },
+      "pa:dint_sword1_event": {
+        "add": {
+          "component_groups": [
+            "pa:dint_sword1"
+          ]
+        }
+      },
+      "pa:dint_sword2_event": {
+        "add": {
+          "component_groups": [
+            "pa:dint_sword2"
+          ]
+        }
+      },
+      "pa:legend_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:legend_sword"
+          ]
+        }
+      },
+      "pa:gadshed_regenka_event": {
+        "add": {
+          "component_groups": [
+            "pa:gadshed_regenka"
+          ]
+        }
+      },
+      "pa:gadshed_strong_event": {
+        "add": {
+          "component_groups": [
+            "pa:gadshed_strong"
+          ]
+        }
+      },
+      "pa:rainbow_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:rainbow_sword"
+          ]
+        }
+      },
+      "pa:grawi_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:grawi_sword"
+          ]
+        }
+      },
+      "pa:krystal_pixe_event": {
+        "add": {
+          "component_groups": [
+            "pa:krystal_pixe"
+          ]
+        }
+      },
+      "pa:geml_pixe_event": {
+        "add": {
+          "component_groups": [
+            "pa:geml_pixe"
+          ]
+        }
+      },
+      "pa:stoner_copie_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:stoner_copie_sword"
+          ]
+        }
+      },
+      "pa:gaechniu_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:gaechniu_sword"
+          ]
+        }
+      },
+      "pa:adskai_lopata_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:adskai_lopata_sword"
+          ]
+        }
+      },
+      "pa:serebrainnai_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:serebrainnai_sword"
+          ]
+        }
+      },
+      "pa:gem_topor_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:gem_topor_sword"
+          ]
+        }
+      },
+      "pa:stone_topor_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:stone_topor_sword"
+          ]
+        }
+      },
+      "pa:zlo_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:zlo_sword"
+          ]
+        }
+      },
+      "pa:moon_sword_topor_event": {
+        "add": {
+          "component_groups": [
+            "pa:moon_sword_topor"
+          ]
+        }
+      },
+      "pa:mexa_sword_topor_event": {
+        "add": {
+          "component_groups": [
+            "pa:mexa_sword_topor"
+          ]
+        }
+      },
+      "pa:krystal_lopata_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:krystal_lopata_sword"
+          ]
+        }
+      },
+      "pa:molot_event": {
+        "add": {
+          "component_groups": [
+            "pa:molot"
+          ]
+        }
+      },
+      "pa:diamond_knight_event": {
+        "add": {
+          "component_groups": [
+            "pa:diamond_knight"
+          ]
+        }
+      },
+      "pa:gasket_lovkach_event": {
+        "add": {
+          "component_groups": [
+            "pa:gasket_lovkach"
+          ]
+        }
+      },
+      "pa:gasket_razvorot_event": {
+        "add": {
+          "component_groups": [
+            "pa:gasket_razvorot"
+          ]
+        }
+      },
+      "pa:gasket_podbros_event": {
+        "add": {
+          "component_groups": [
+            "pa:gasket_podbros"
+          ]
+        }
+      },
+      "pa:water_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:water_sword"
+          ]
+        }
+      },
+      "pa:tehmo_magma_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:tehmo_magma_sword"
+          ]
+        }
+      },
+      "pa:kristal_did_ogranenyi_event": {
+        "add": {
+          "component_groups": [
+            "pa:kristal_did_ogranenyi"
+          ]
+        }
+      },
+      "pa:tehmo_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:tehmo_sword"
+          ]
+        }
+      },
+      "pa:tehmo_kosmo_dark_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:tehmo_kosmo_dark_sword"
+          ]
+        }
+      },
+      "pa:nif_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:nif_sword"
+          ]
+        }
+      },
+      "pa:absolute_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:absolute_sword"
+          ]
+        }
+      },
+      "pa:nif_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:nif_ponji"
+          ]
+        }
+      },
+      "pa:prism_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:prism_sword"
+          ]
+        }
+      },
+      "pa:nif_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:nif_boots"
+          ]
+        }
+      },
+      "pa:dark_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:dark_did"
+          ]
+        }
+      },
+      "pa:prism_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:prism_did"
+          ]
+        }
+      },
+      "pa:dark_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:dark_ponji"
+          ]
+        }
+      },
+      "pa:prism_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:prism_ponji"
+          ]
+        }
+      },
+      "pa:prism_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:prism_boots"
+          ]
+        }
+      },
+      "pa:teste_me_event": {
+        "add": {
+          "component_groups": [
+            "pa:teste_me"
+          ]
+        }
+      },
+      "pa:dark_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:dark_boots"
+          ]
+        }
+      },
+      "pa:strong_brawler_1_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_1"
+          ]
+        }
+      },
+      "pa:loran_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:loran_sword"
+          ]
+        }
+      },
+      "pa:sand_pixe_event": {
+        "add": {
+          "component_groups": [
+            "pa:sand_pixe"
+          ]
+        }
+      },
+      "pa:lonar_axe_event": {
+        "add": {
+          "component_groups": [
+            "pa:lonar_axe"
+          ]
+        }
+      },
+      "pa:dark_axe_event": {
+        "add": {
+          "component_groups": [
+            "pa:dark_axe"
+          ]
+        }
+      },
+      "pa:loran_ponji_event": {
+        "add": {
+          "component_groups": [
+            "pa:loran_ponji"
+          ]
+        }
+      },
+      "pa:loran_boots_event": {
+        "add": {
+          "component_groups": [
+            "pa:loran_boots"
+          ]
+        }
+      },
+      "pa:loran_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:loran_did"
+          ]
+        }
+      },
+      "pa:copper_sword_event": {
+        "add": {
+          "component_groups": [
+            "pa:copper_sword"
+          ]
+        }
+      },
+      "pa:nif_pixe_event": {
+        "add": {
+          "component_groups": [
+            "pa:nif_pixe"
+          ]
+        }
+      },
+      "pa:loran_pixe_event": {
+        "add": {
+          "component_groups": [
+            "pa:loran_pixe"
+          ]
+        }
+      },
+      "pa:strong_brawler_2_s_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_2_s"
+          ]
+        }
+      },
+      "pa:chip_brawler_brake_event": {
+        "add": {
+          "component_groups": [
+            "pa:chip_brawler_brake"
+          ]
+        }
+      },
+      "pa:chip_brawler_event": {
+        "add": {
+          "component_groups": [
+            "pa:chip_brawler"
+          ]
+        }
+      },
+      "pa:el_primo_event": {
+        "add": {
+          "component_groups": [
+            "pa:el_primo"
+          ]
+        }
+      },
+      "pa:strong_brawler_2_regen_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_2_regen"
+          ]
+        }
+      },
+      "pa:strong_brawler_2_protection_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_2_protection"
+          ]
+        }
+      },
+      "pa:strong_brawler_3_protection_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_3_protection"
+          ]
+        }
+      },
+      "pa:strong_brawler_3_s_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_3_s"
+          ]
+        }
+      },
+      "pa:strong_brawler_3_regen_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_3_regen"
+          ]
+        }
+      },
+      "pa:strong_brawler_2_speed_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_2_speed"
+          ]
+        }
+      },
+      "pa:strong_brawler_3_speed_event": {
+        "add": {
+          "component_groups": [
+            "pa:strong_brawler_3_speed"
+          ]
+        }
+      },
+      "pa:nif_did_event": {
+        "add": {
+          "component_groups": [
+            "pa:nif_did"
+          ]
+        }
+      }
+    }
+  }
+}

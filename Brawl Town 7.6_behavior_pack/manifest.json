@@ -1,0 +1,70 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "perfect add-on for Minecraft  by verte82",
+    "name": "Brawl Town 7.6",
+    "uuid": "cb039cd4-5b12-487e-85b1-2b17d21f254b",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "description": "perfect add-on for Minecraft  by verte82",
+      "type": "data",
+      "uuid": "2f410509-47ca-4a04-a69b-dc9ee3294a4e",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "type": "script",
+      "uuid": "a8eb095b-d9fa-46f4-b7d3-590ccfd319bf",
+      "version": [
+        0,
+        0,
+        1
+      ],
+      "entry": "scripts/main.js",
+      "language": "javascript"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "d8dce696-ec2b-4bfa-849e-f45e8647fe9e",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "version": "2.6.0",
+      "module_name": "@minecraft/server"
+    },
+    {
+      "version": "2.0.0",
+      "module_name": "@minecraft/server-ui"
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "verte82"
+    ],
+    "generated_with": {
+      "MAM": [
+        "4.0.7"
+      ]
+    },
+    "url": "https://addonsmaker.com/"
+  }
+}
