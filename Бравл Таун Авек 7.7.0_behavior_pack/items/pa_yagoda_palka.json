@@ -1,0 +1,34 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:yagoda_palka",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "pa:yagoda_palka"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "Ягода на палке"
+      },
+      "minecraft:max_stack_size": 8,
+      "minecraft:hand_equipped": false,
+      "minecraft:glint": true,
+      "minecraft:food": {
+        "saturation_modifier": 0.8,
+        "nutrition": 5,
+        "can_always_eat": true
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 2.5,
+        "movement_modifier": 0.35
+      },
+      "minecraft:use_animation": "drink"
+    }
+  }
+}

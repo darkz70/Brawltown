@@ -1,0 +1,38 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pa:map_1"
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:friction": 0.7,
+      "minecraft:map_color": "#FFFFFF",
+      "minecraft:flammable": {
+        "catch_chance_modifier": 1,
+        "destroy_chance_modifier": 1
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pa_map_1_side",
+          "render_method": "blend"
+        },
+        "up": {
+          "texture": "pa_map_1_up",
+          "render_method": "blend"
+        },
+        "down": {
+          "texture": "pa_map_1_down",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 1.0
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:display_name": "карта городов"
+    }
+  }
+}
