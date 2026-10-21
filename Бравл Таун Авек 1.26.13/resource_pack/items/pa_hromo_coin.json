@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:hromo_coin",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:hromo_coin",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

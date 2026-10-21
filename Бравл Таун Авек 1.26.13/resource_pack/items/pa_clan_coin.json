@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:clan_coin",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:clan_coin",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

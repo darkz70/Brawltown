@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:krystal_game",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:krystal_game",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

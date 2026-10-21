@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:gem_2",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:gem_2",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

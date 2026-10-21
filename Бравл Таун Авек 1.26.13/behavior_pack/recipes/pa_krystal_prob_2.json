@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "krystal_prob_2_95781ca1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      "CCC",
+      "CCD"
+    ],
+    "key": {
+      "A": {
+        "item": "pa:krystal_nif",
+        "data": 0
+      },
+      "B": {
+        "item": "pa:krystal",
+        "data": 0
+      },
+      "C": {
+        "item": "pa:krystal_prob",
+        "data": 0
+      },
+      "D": {
+        "item": "pa:gem",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:krystal_prob_2",
+      "count": 1
+    }
+  }
+}

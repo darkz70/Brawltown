@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:krystal_nif",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:krystal_nif",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

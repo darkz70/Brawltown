@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "мод от великого by verte",
+    "name": "Бравл Таун Авек 1.26.13",
+    "uuid": "7417405f-75e8-48f2-af10-4b1f940af8cf",
+    "version": [
+      1,
+      26,
+      13
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "description": "мод от великого by verte",
+      "type": "data",
+      "uuid": "43af69b1-b493-49a1-b79d-9100a65b929d",
+      "version": [
+        1,
+        26,
+        13
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7cef6ef9-953d-41e1-bbfb-6c849caf9715",
+      "version": [
+        1,
+        26,
+        13
+      ]
+    }
+  ]
+}

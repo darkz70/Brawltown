@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:slitok_pfoenix",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:slitok_pfoenix",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

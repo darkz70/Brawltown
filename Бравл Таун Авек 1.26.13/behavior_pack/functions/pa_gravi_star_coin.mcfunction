@@ -1,0 +1,1 @@
+give @s pa:gravi_star_coin

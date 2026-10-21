@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:credit_coin",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:credit_coin",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

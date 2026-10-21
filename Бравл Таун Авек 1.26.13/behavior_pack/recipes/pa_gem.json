@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gem_6196109c"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "pa:gem_2",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "pa:gem",
+      "count": 4
+    }
+  }
+}

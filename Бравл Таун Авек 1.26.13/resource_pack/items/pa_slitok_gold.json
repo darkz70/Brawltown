@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:slitok_gold",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:slitok_gold",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "pa_gem_ore": {
+      "textures": [
+        "textures/blocks/pa_gem_ore"
+      ]
+    },
+    "pa_krystal_ore": {
+      "textures": [
+        "textures/blocks/pa_krystal_ore"
+      ]
+    },
+    "pa_heard_town": {
+      "textures": [
+        "textures/blocks/pa_heard_town"
+      ]
+    },
+    "pa_nif_ore": {
+      "textures": [
+        "textures/blocks/pa_nif_ore"
+      ]
+    },
+    "pa_map_up": {
+      "textures": "textures/blocks/pa_map_up"
+    },
+    "pa_map_1_up": {
+      "textures": "textures/blocks/pa_map_1_up"
+    },
+    "pa_map_1_down": {
+      "textures": "textures/blocks/pa_map_1_down"
+    },
+    "pa_map_down": {
+      "textures": "textures/blocks/pa_map_down"
+    },
+    "pa_map_1_side": {
+      "textures": "textures/blocks/pa_map_1_side"
+    },
+    "pa_map_side": {
+      "textures": "textures/blocks/pa_map_side"
+    },
+    "pa_loran_ore": {
+      "textures": [
+        "textures/blocks/pa_loran_ore"
+      ]
+    }
+  }
+}

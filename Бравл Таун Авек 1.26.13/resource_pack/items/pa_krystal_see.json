@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pa:krystal_see",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "pa:krystal_see",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}
