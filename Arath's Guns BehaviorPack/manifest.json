@@ -3,11 +3,11 @@
   "header": {
     "name": "Arath's Guns 1.1 BP",
     "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
-    "uuid": "2fc5963d-e848-40a8-b717-60467265d695",
+    "uuid": "f4cdcb05-dbd7-4d9f-a65e-df62f843adeb",
     "version": [
       1,
       1,
-      6
+      7
     ],
     "min_engine_version": [
       1,
@@ -19,33 +19,33 @@
     {
       "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
       "type": "data",
-      "uuid": "93ce5754-30a6-4f56-bad7-b82164b1a208",
+      "uuid": "c32db7b0-8e2f-42cb-a466-df1b7f871555",
       "version": [
         1,
         1,
-        6
+        7
       ]
     },
     {
       "description": "by Darkz69i42k | Arath's Guns 1.1 Scripts",
       "type": "script",
       "language": "javascript",
-      "uuid": "47a7f2fb-4289-466d-9fbc-1f60a09bfc8f",
+      "uuid": "181fb3bc-fb43-46fe-aed6-0eafa20570e5",
       "entry": "scripts/main.js",
       "version": [
         1,
         1,
-        6
+        7
       ]
     }
   ],
   "dependencies": [
     {
-      "uuid": "ce9ec018-1ca2-4ee4-b848-2ab0718619f6",
+      "uuid": "3d056d46-f650-497b-ac8d-c25c4320b191",
       "version": [
         1,
         1,
-        6
+        7
       ]
     },
     {

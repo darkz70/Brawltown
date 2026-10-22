@@ -241,7 +241,7 @@ const GUN_CONFIGS = {
     "sound": "firework.launch",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:flare_gun_ammo",
-    "reloadCount": 5,
+    "reloadCount": 1,
     "altFire": null,
     "power": 2.2,
     "uncertainty": 1,
@@ -353,7 +353,7 @@ const GUN_CONFIGS = {
     "sound": "gun.grenade_shot",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:grenade_bullet",
-    "reloadCount": 5,
+    "reloadCount": 8,
     "altFire": null,
     "power": 3.5,
     "uncertainty": 1,
@@ -702,7 +702,7 @@ const GUN_CONFIGS = {
     "damageLabel": "4 (подств. взрыв)"
   },
   "gunsaddon:shorty": {
-    "maxAmmo": 5,
+    "maxAmmo": 8,
     "cooldown": 1.5,
     "cooldownCategory": "shorty",
     "projectile": "gunsaddon:shorty_shoot",
@@ -710,7 +710,7 @@ const GUN_CONFIGS = {
     "sound": "gun.shorty",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:cartucho",
-    "reloadCount": 5,
+    "reloadCount": 8,
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
@@ -734,7 +734,7 @@ const GUN_CONFIGS = {
     "damageLabel": "6"
   },
   "gunsaddon:spas": {
-    "maxAmmo": 10,
+    "maxAmmo": 8,
     "cooldown": 0.4,
     "cooldownCategory": "spas",
     "projectile": "gunsaddon:spas_shoot",
@@ -742,7 +742,7 @@ const GUN_CONFIGS = {
     "sound": "gun.spas",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:cartucho",
-    "reloadCount": 10,
+    "reloadCount": 8,
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
@@ -846,7 +846,7 @@ const GUN_CONFIGS = {
     "damageLabel": "8"
   },
   "gunsaddon:winchester_1887": {
-    "maxAmmo": 5,
+    "maxAmmo": 8,
     "cooldown": 1.5,
     "cooldownCategory": "winchester_1887",
     "projectile": "gunsaddon:winchester_1887_shoot",
@@ -854,7 +854,7 @@ const GUN_CONFIGS = {
     "sound": "gun.shorty",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:cartucho",
-    "reloadCount": 5,
+    "reloadCount": 8,
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
@@ -862,7 +862,7 @@ const GUN_CONFIGS = {
     "damageLabel": "2×8 (16)"
   },
   "gunsaddon:winchester_shotgun": {
-    "maxAmmo": 5,
+    "maxAmmo": 8,
     "cooldown": 1.5,
     "cooldownCategory": "winchester_shotgun",
     "projectile": "gunsaddon:winchester_shotgun_shoot",
@@ -870,7 +870,7 @@ const GUN_CONFIGS = {
     "sound": "gun.shotgun",
     "requiresSneak": false,
     "reloadItem": "gunsaddon:cartucho",
-    "reloadCount": 5,
+    "reloadCount": 8,
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
@@ -1459,10 +1459,26 @@ function handleGunUse(player, itemStack) {
   let remaining = getAmmoState(itemStack, maxAmmo);
 
   if (remaining <= 0) {
-    if (cfg.reloadItem && consumeAmmoFromOffhandOrInventory(player, cfg.reloadItem, cfg.reloadCount || 1)) {
-      setAmmoState(itemStack, maxAmmo, maxAmmo);
+    const needed = cfg.reloadCount || 1;
+    let loadedAmmo = 0;
+    if (cfg.reloadItem) {
+      if (needed <= 1) {
+        if (consumeAmmoFromOffhandOrInventory(player, cfg.reloadItem, 1)) {
+          loadedAmmo = maxAmmo;
+        }
+      } else {
+        for (let n = needed; n >= 1; n--) {
+          if (consumeAmmoFromOffhandOrInventory(player, cfg.reloadItem, n)) {
+            loadedAmmo = Math.min(maxAmmo, n);
+            break;
+          }
+        }
+      }
+    }
+    if (loadedAmmo > 0) {
+      setAmmoState(itemStack, loadedAmmo, maxAmmo);
       equip.setEquipment(EquipmentSlot.Mainhand, itemStack);
-      player.onScreenDisplay.setActionBar(`§l§eПатроны: §f${maxAmmo}§e/§f${maxAmmo} §7| §cУрон: §6${cfg.damageLabel || cfg.damage}§r`);
+      player.onScreenDisplay.setActionBar(`§l§eПатроны: §f${loadedAmmo}§e/§f${maxAmmo} §7| §cУрон: §6${cfg.damageLabel || cfg.damage}§r`);
       try {
         player.playSound("random.click", { volume: 1.0, pitch: 1.2 });
       } catch {}
