@@ -50,8 +50,8 @@
           },
           "impact_damage": {
             "damage": [
-              1,
-              2
+              4,
+              4
             ],
             "knockback": true,
             "destroy_on_hit": true,
