@@ -858,8 +858,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
-    "damage": 4,
-    "damageLabel": "⚔ 4×8"
+    "damage": 16,
+    "damageLabel": "⚔ 2×8 (16)"
   },
   "gunsaddon:winchester_shotgun": {
     "maxAmmo": 5,
@@ -914,7 +914,7 @@ const PROJECTILE_DAMAGES = {
   "gunsaddon:tavor_21_shoot": 4,
   "gunsaddon:thompson_shoot": 10,
   "gunsaddon:uzi_shoot": 8,
-  "gunsaddon:winchester_1887_shoot": 4,
+  "gunsaddon:winchester_1887_shoot": 2,
   "gunsaddon:winchester_shotgun_shoot": 5
 };
 
