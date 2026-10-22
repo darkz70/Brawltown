@@ -46,8 +46,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 19,
-    "damageLabel": "⚔ 19"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:ak47_shotgun": {
     "maxAmmo": 40,
@@ -69,8 +69,8 @@ const GUN_CONFIGS = {
     },
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 19,
-    "damageLabel": "⚔ 19"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:barret_m82a1": {
     "maxAmmo": 10,
@@ -117,8 +117,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 10.0,
     "uncertainty": 1,
-    "damage": 60,
-    "damageLabel": "💥 Взрыв 6"
+    "damage": 12,
+    "damageLabel": "💥 12 (Взрыв 6)"
   },
   "gunsaddon:contender": {
     "maxAmmo": 1,
@@ -149,8 +149,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 21,
-    "damageLabel": "⚔ 21"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:double_action_revolver": {
     "maxAmmo": 6,
@@ -229,8 +229,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 18.0,
     "uncertainty": 4.1,
-    "damage": 25,
-    "damageLabel": "⚔ 25×8"
+    "damage": 5,
+    "damageLabel": "⚔ 5×8"
   },
   "gunsaddon:flare_gun": {
     "maxAmmo": 1,
@@ -245,8 +245,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 2.2,
     "uncertainty": 1,
-    "damage": 25,
-    "damageLabel": "⚔ 25"
+    "damage": 5,
+    "damageLabel": "⚔ 5"
   },
   "gunsaddon:g3sg1": {
     "maxAmmo": 30,
@@ -261,8 +261,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 26,
-    "damageLabel": "⚔ 26"
+    "damage": 5,
+    "damageLabel": "⚔ 5"
   },
   "gunsaddon:g3sg1_scope": {
     "maxAmmo": 30,
@@ -277,8 +277,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 26,
-    "damageLabel": "⚔ 26"
+    "damage": 5,
+    "damageLabel": "⚔ 5"
   },
   "gunsaddon:glock_17": {
     "maxAmmo": 17,
@@ -357,8 +357,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 3.5,
     "uncertainty": 1,
-    "damage": 35,
-    "damageLabel": "💥 Взрыв 3.5"
+    "damage": 7,
+    "damageLabel": "💥 7 (Взрыв 3.5)"
   },
   "gunsaddon:luger": {
     "maxAmmo": 8,
@@ -428,8 +428,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 10.0,
     "uncertainty": 1,
-    "damage": 60,
-    "damageLabel": "💥 Взрыв 6"
+    "damage": 12,
+    "damageLabel": "💥 12 (Взрыв 6)"
   },
   "gunsaddon:m4a1": {
     "maxAmmo": 30,
@@ -483,8 +483,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 21,
-    "damageLabel": "⚔ 21"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:mauser": {
     "maxAmmo": 12,
@@ -579,8 +579,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 19,
-    "damageLabel": "⚔ 19"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:railgun": {
     "maxAmmo": 1,
@@ -596,7 +596,7 @@ const GUN_CONFIGS = {
     "power": 10.0,
     "uncertainty": 1,
     "damage": 100,
-    "damageLabel": "💥 Взрыв 10"
+    "damageLabel": "💥 100 (Взрыв 10)"
   },
   "gunsaddon:revolver": {
     "maxAmmo": 7,
@@ -611,8 +611,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 16,
-    "damageLabel": "⚔ 16"
+    "damage": 3,
+    "damageLabel": "⚔ 3"
   },
   "gunsaddon:rpg": {
     "maxAmmo": 1,
@@ -627,8 +627,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 10.0,
     "uncertainty": 1,
-    "damage": 60,
-    "damageLabel": "💥 Взрыв 6"
+    "damage": 12,
+    "damageLabel": "💥 12 (Взрыв 6)"
   },
   "gunsaddon:saiga_12": {
     "maxAmmo": 10,
@@ -643,8 +643,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 28,
-    "damageLabel": "⚔ 28"
+    "damage": 6,
+    "damageLabel": "⚔ 6"
   },
   "gunsaddon:sawed_off_shotgun": {
     "maxAmmo": 2,
@@ -659,8 +659,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 18.0,
     "uncertainty": 4.1,
-    "damage": 25,
-    "damageLabel": "⚔ 25×8"
+    "damage": 5,
+    "damageLabel": "⚔ 5×8"
   },
   "gunsaddon:scar": {
     "maxAmmo": 60,
@@ -675,8 +675,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 19,
-    "damageLabel": "⚔ 19"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:scar_m203": {
     "maxAmmo": 60,
@@ -698,8 +698,8 @@ const GUN_CONFIGS = {
     },
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 19,
-    "damageLabel": "⚔ 19"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:shorty": {
     "maxAmmo": 5,
@@ -714,8 +714,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
-    "damage": 24,
-    "damageLabel": "⚔ 24×8"
+    "damage": 5,
+    "damageLabel": "⚔ 5×8"
   },
   "gunsaddon:skorpion": {
     "maxAmmo": 20,
@@ -746,8 +746,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
-    "damage": 26,
-    "damageLabel": "⚔ 26×8"
+    "damage": 5,
+    "damageLabel": "⚔ 5×8"
   },
   "gunsaddon:springfield": {
     "maxAmmo": 5,
@@ -762,8 +762,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 28,
-    "damageLabel": "⚔ 28"
+    "damage": 6,
+    "damageLabel": "⚔ 6"
   },
   "gunsaddon:springfield_scope": {
     "maxAmmo": 5,
@@ -778,8 +778,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 12.0,
     "uncertainty": 1,
-    "damage": 28,
-    "damageLabel": "⚔ 28"
+    "damage": 6,
+    "damageLabel": "⚔ 6"
   },
   "gunsaddon:sturmgewehr44": {
     "maxAmmo": 30,
@@ -810,8 +810,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 9.0,
     "uncertainty": 1,
-    "damage": 20,
-    "damageLabel": "⚔ 20"
+    "damage": 4,
+    "damageLabel": "⚔ 4"
   },
   "gunsaddon:thompson": {
     "maxAmmo": 50,
@@ -858,8 +858,8 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
-    "damage": 21,
-    "damageLabel": "⚔ 21×8"
+    "damage": 4,
+    "damageLabel": "⚔ 4×8"
   },
   "gunsaddon:winchester_shotgun": {
     "maxAmmo": 5,
@@ -874,21 +874,21 @@ const GUN_CONFIGS = {
     "altFire": null,
     "power": 5.0,
     "uncertainty": 4.1,
-    "damage": 24,
-    "damageLabel": "⚔ 24×8"
+    "damage": 5,
+    "damageLabel": "⚔ 5×8"
   }
 };
 
 const PROJECTILE_DAMAGES = {
   "gunsaddon:aa12_shoot": 28,
   "gunsaddon:aac_honey_badger_shoot": 15,
-  "gunsaddon:ak47_shoot": 19,
+  "gunsaddon:ak47_shoot": 4,
   "gunsaddon:barret_m82a1_shoot": 32,
   "gunsaddon:contender_shoot": 31,
-  "gunsaddon:desert_eagle_shoot": 21,
+  "gunsaddon:desert_eagle_shoot": 4,
   "gunsaddon:double_action_revolver_shoot": 13,
-  "gunsaddon:flare_gun_shoot": 25,
-  "gunsaddon:g3sg1_shoot": 26,
+  "gunsaddon:flare_gun_shoot": 5,
+  "gunsaddon:g3sg1_shoot": 5,
   "gunsaddon:glock_17_shoot": 9,
   "gunsaddon:glock_17_with_silencer_shoot": 7,
   "gunsaddon:gold_thompson_shoot": 22,
@@ -896,26 +896,26 @@ const PROJECTILE_DAMAGES = {
   "gunsaddon:luger_shoot": 7,
   "gunsaddon:m16_shoot": 14,
   "gunsaddon:m4a1_shoot": 21,
-  "gunsaddon:m60_shoot": 21,
+  "gunsaddon:m60_shoot": 4,
   "gunsaddon:mauser_shoot": 7,
   "gunsaddon:micro_uzi_shoot": 6,
   "gunsaddon:new_minigun_shoot": 28,
   "gunsaddon:mp40_shoot": 8,
   "gunsaddon:mp5_shoot": 9,
-  "gunsaddon:revolver_shoot": 16,
-  "gunsaddon:saiga_12_shoot": 28,
-  "gunsaddon:sawed_off_shotgun_shoot": 25,
-  "gunsaddon:scar_shoot": 19,
-  "gunsaddon:shorty_shoot": 24,
+  "gunsaddon:revolver_shoot": 3,
+  "gunsaddon:saiga_12_shoot": 6,
+  "gunsaddon:sawed_off_shotgun_shoot": 5,
+  "gunsaddon:scar_shoot": 4,
+  "gunsaddon:shorty_shoot": 5,
   "gunsaddon:skorpion_shoot": 6,
-  "gunsaddon:spas_shoot": 26,
-  "gunsaddon:springfield_shoot": 28,
+  "gunsaddon:spas_shoot": 5,
+  "gunsaddon:springfield_shoot": 6,
   "gunsaddon:sturmgewehr44_shoot": 12,
-  "gunsaddon:tavor_21_shoot": 20,
+  "gunsaddon:tavor_21_shoot": 4,
   "gunsaddon:thompson_shoot": 10,
   "gunsaddon:uzi_shoot": 8,
-  "gunsaddon:winchester_1887_shoot": 21,
-  "gunsaddon:winchester_shotgun_shoot": 24
+  "gunsaddon:winchester_1887_shoot": 4,
+  "gunsaddon:winchester_shotgun_shoot": 5
 };
 
 const EXPLOSION_CONFIGS = {
@@ -1540,7 +1540,7 @@ world.afterEvents.projectileHitEntity.subscribe((ev) => {
   if (typeId === "gunsaddon:flare_gun_shoot") {
     if (target && !damagedProjectiles.has(proj.id)) {
       damagedProjectiles.add(proj.id);
-      damageTargetEntity(target, PROJECTILE_DAMAGES[typeId] ?? 25, owner, true);
+      damageTargetEntity(target, PROJECTILE_DAMAGES[typeId] ?? 5, owner, true);
     }
     startFlareSequence(proj, owner);
     return;

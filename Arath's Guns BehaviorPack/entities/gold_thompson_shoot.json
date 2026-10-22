@@ -32,7 +32,7 @@
           "impact_damage": {
             "damage": [
               22,
-              22.0
+              22
             ],
             "knockback": true,
             "destroy_on_hit": true,

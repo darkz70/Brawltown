@@ -33,8 +33,8 @@
         "on_hit": {
           "impact_damage": {
             "damage": [
-              25,
-              25.0
+              5,
+              5
             ],
             "knockback": true,
             "catch_fire": true,
