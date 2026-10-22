@@ -52,7 +52,7 @@
         "saturation_modifier": 0.0,
         "can_always_eat": true
       },
-      "minecraft:damage": 40
+      "minecraft:damage": 16
     }
   }
 }
