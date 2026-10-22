@@ -1,0 +1,74 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.dual_pistol": {
+      "states": {
+        "default": {
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "gun": "q.equipped_item_any_tag('slot.weapon.mainhand', 'dual_pistol')"
+            }
+          ]
+        },
+        "gun": {
+          "animations": [
+            "dual_pistol_hold"
+          ],
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'dual_pistol')"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.gun": {
+      "states": {
+        "default": {
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "gun": "q.equipped_item_any_tag('slot.weapon.mainhand', 'gun')"
+            }
+          ]
+        },
+        "gun": {
+          "animations": [
+            "gun_hold"
+          ],
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun')"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.web_shooter": {
+      "states": {
+        "default": {
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "gun": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter')"
+            }
+          ]
+        },
+        "gun": {
+          "animations": [
+            "web_shooter_hold"
+          ],
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter')"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

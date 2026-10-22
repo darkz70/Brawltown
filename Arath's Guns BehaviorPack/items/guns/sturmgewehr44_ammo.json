@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:sturmgewehr44_ammo",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "sturmgewehr44_ammo"
+        }
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:allow_off_hand": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:display_name": {
+        "value": "Sturmgewehr44 Ammo"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "sturmgewehr44_ammo"
+        ]
+      }
+    }
+  }
+}

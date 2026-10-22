@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.g3sg1_ammo",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "springfield",
+					"parent": "barrell",
+					"pivot": [0, 5, -4]
+				},
+				{
+					"name": "bone",
+					"parent": "springfield",
+					"pivot": [0.5, 1, -1],
+					"cubes": [
+						{"origin": [-1, 1.2, -0.875], "size": [2, 4, 4], "inflate": -0.025, "uv": [22, 0]},
+						{"origin": [-1, 0.6, -0.9], "size": [2, 1, 4], "inflate": -0.03, "pivot": [0, 0.2, 1.125], "rotation": [-5, 0, 0], "uv": [22, 8]}
+					]
+				}
+			]
+		}
+	]
+}

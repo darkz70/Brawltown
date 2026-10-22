@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "leftforcraft:adrenaline"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "CBC",
+      "BAB",
+      "CBC"
+    ],
+    "key": {
+      "A": {
+        "item": "worldanimals:syringe"
+      },
+      "B": {
+        "item": "minecraft:sugar"
+      },
+      "C": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "result": {
+      "item": "leftforcraft:adrenaline",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "context": "AlwaysUnlocked"
+      }
+    ]
+  }
+}

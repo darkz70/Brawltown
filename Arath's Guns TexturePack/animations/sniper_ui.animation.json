@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.new_guns.sniper_ui": {
+			"loop": true,
+			"bones": {
+				"sniper_ui": {
+					"rotation": [45, 45, 0],
+					"position": [10, -10, -12]
+				},
+				"huesos_ui": {
+					"position": [1.075, 1.025, 0]
+				}
+			}
+		},
+		"animation.new_guns.position": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -19.5, 0]
+				},
+				"huesos_ui": {
+					"position": [0.075, 0.025, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.drone0": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.drone1": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.drone1"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.drone2": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.drone2"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.caja": {
+      "geometry": "Geometry.caja",
+      "materials": [ { "*": "Material.caja" } ],
+      "textures": [ "Texture.caja" ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Arath's Guns 1.1 RP",
+    "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
+    "uuid": "b4cadb65-6e10-4561-9686-e9eb04efb311",
+    "version": [
+      1,
+      1,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
+      "type": "resources",
+      "uuid": "c5df1b4e-a055-4bb7-943c-9a18ee5f1a11",
+      "version": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e1173e08-d489-4714-b90b-763fe4a8ba11",
+      "version": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "Darkz69i42k",
+      "ArathNido"
+    ]
+  }
+}

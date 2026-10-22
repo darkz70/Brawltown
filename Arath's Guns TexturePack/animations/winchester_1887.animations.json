@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.winchester_1887.first_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"position": [
+						0,
+						34.5,
+						1
+					],
+					"rotation": [
+						-59.6924,
+						-54.7637,
+						26.1419
+					],
+					"scale": 1.25
+				}
+			}
+		},
+		"animation.ammo.off_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"scale": 0.0
+				}
+			}
+		},
+		"animation.winchester_1887.third_person_main_hand": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"position": [
+                        0,
+                        20,
+                        0
+                    ],
+                    "rotation": [
+                        90,
+                        0,
+                        0
+                    ],
+					"scale": 1.15
+				}
+			}
+		}
+	}
+}

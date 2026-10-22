@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "droneaddon:drone_ammo",
+	  "materials": {
+		  "default": "entity_emissive_alpha",
+		  "caja": "slime"
+	  },
+      "textures": {
+        "default": "textures/entity/drone",
+		"drone1": "textures/entity/drone1",
+		"drone2": "textures/entity/drone2",
+		"caja": "textures/entity/regalo_drone_ammo"
+      },
+      "geometry": {
+        "default": "geometry.drone",
+		"caja": "geometry.caja"
+      },
+      "animations": {
+        "loop": "animation.drone.idle"
+      },
+      "animation_controllers": [
+        {
+          "loop": "controller.animation.loop"
+        }
+      ],
+      "render_controllers": [ "controller.render.drone0", "controller.render.drone1", "controller.render.drone2", "controller.render.caja" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "drone_ammo",
+        "texture_index": 0
+      }
+    }
+  }
+}
