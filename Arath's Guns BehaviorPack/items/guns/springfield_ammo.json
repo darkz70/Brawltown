@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:springfield_ammo",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "springfield_ammo"
+        }
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:allow_off_hand": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:display_name": {
+        "value": "Springfield Ammo"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "springfield_ammo"
+        ]
+      }
+    }
+  }
+}

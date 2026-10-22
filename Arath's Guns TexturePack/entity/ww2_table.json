@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:ww2_table",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/blocks/ww2_table"
+			},
+			"geometry": {
+				"default": "geometry.ww2_table"
+			},
+			"animations": {
+				"humanoid_big_head": "animation.humanoid.big_head",
+				"walk": "animation.ww2_table.walk",
+				"move": "animation.ww2_table.idle",
+				"attack": "animation.ww2_table.attack",
+				"flower": "animation.ww2_table.flower",
+				"look_at_target": "animation.common.look_at_target"
+			},
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+			"animation_controllers": [
+			{ "humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head" },
+				{
+					"move": "controller.animation.zombie_tank.move"
+				},
+				{
+					"arm": "controller.animation.zombie_tank.arm_movement"
+				},
+				{
+					"attack": "controller.animation.zombie_tank.attack"
+				}
+			],
+			"render_controllers": [
+				"controller.render.item_3d"
+			],
+			"spawn_egg": {
+				"texture": "ww2_table",
+				"texture_index": 0
+			}
+		}
+	}
+}

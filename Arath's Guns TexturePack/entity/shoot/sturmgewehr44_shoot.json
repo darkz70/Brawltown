@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:sturmgewehr44_shoot",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_guns/shoot.png"
+			},
+			"geometry": {
+				"default": "geometry.shoot"
+			},
+			"render_controllers": [
+				"controller.render.slime"
+			],
+			"sound_effects": {
+				"shoot": "gun.sturmgewehr44",
+				"hit": "bullet.hit"
+			},
+			"animations": {
+				"move": "animation.arrow.move",
+				"on_shoot": "controller.animation.guns_fire",
+				"bullet_hit": "controller.animation.hit"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
+				"animate": [
+					{
+						"on_shoot": "query.life_time <= 1"
+					},
+					{
+						"bullet_hit": "query.mark_variant == 1"
+					}
+				]
+			}
+		}
+	}
+}

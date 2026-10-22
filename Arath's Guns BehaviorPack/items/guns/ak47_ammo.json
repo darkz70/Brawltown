@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:ak47_ammo",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "ak47_ammo"
+        }
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:allow_off_hand": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:display_name": {
+        "value": "Ak47 Ammo"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "ak47_ammo"
+        ]
+      }
+    }
+  }
+}

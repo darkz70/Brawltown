@@ -1,0 +1,37 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pa:krystal_prob_2_95781ca1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      "CCC",
+      "CCD"
+    ],
+    "key": {
+      "A": {
+        "item": "pa:krystal_nif"
+      },
+      "B": {
+        "item": "pa:krystal"
+      },
+      "C": {
+        "item": "pa:krystal_prob"
+      },
+      "D": {
+        "item": "pa:gem"
+      }
+    },
+    "result": {
+      "item": "pa:krystal_prob_2",
+      "count": 1
+    },
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    }
+  }
+}

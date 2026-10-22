@@ -1,0 +1,62 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Arath's Guns 1.1 BP",
+    "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
+    "uuid": "2fc5963d-e848-40a8-b717-60467265d695",
+    "version": [
+      1,
+      1,
+      6
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      13
+    ]
+  },
+  "modules": [
+    {
+      "description": "by Darkz69i42k | Arath's Guns 1.1 (1.26.13)",
+      "type": "data",
+      "uuid": "93ce5754-30a6-4f56-bad7-b82164b1a208",
+      "version": [
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "description": "by Darkz69i42k | Arath's Guns 1.1 Scripts",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "47a7f2fb-4289-466d-9fbc-1f60a09bfc8f",
+      "entry": "scripts/main.js",
+      "version": [
+        1,
+        1,
+        6
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ce9ec018-1ca2-4ee4-b848-2ab0718619f6",
+      "version": [
+        1,
+        1,
+        6
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.6.0"
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "Darkz69i42k",
+      "ArathNido"
+    ]
+  }
+}

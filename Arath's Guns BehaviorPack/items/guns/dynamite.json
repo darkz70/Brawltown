@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gunsaddon:dynamite",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "dynamite"
+        }
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:cooldown": {
+        "category": "dynamite",
+        "duration": 1.0
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": true
+      },
+      "minecraft:projectile": {
+        "projectile_entity": "gunsaddon:dynamite_entity"
+      },
+      "minecraft:display_name": {
+        "value": "Dynamite"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.minigun_loop.idle": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.minigun_loop @p ~ ~ ~"
+        ]
+      }
+    }
+  }
+}

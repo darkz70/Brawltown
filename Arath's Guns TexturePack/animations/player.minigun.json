@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.minigun": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [22.5, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [22.5, 0, 0]
+				}
+			}
+		}
+	}
+}
