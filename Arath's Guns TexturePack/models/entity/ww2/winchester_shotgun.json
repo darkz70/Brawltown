@@ -1,0 +1,71 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.winchester_shotgun",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "gun",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "handle",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "barrell",
+					"parent": "gun",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "sturmgewehr44",
+					"parent": "barrell",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 1.525, 3.65], "size": [1, 2, 1], "inflate": 0.275, "uv": [14, 5]},
+						{"origin": [-0.5, -2.25, 10.85], "size": [1, 4, 2], "inflate": 0.275, "uv": [0, 12]},
+						{"origin": [-0.5, -1.6, 9.225], "size": [1, 7, 1], "inflate": 0.25, "pivot": [0, -0.75, 10.35], "rotation": [60, 0, 0], "uv": [14, 10]},
+						{"origin": [-0.5, 1.025, 6.425], "size": [1, 1, 4], "inflate": 0.24, "pivot": [0, 1.25, 8.85], "rotation": [-8.75, 0, 0], "uv": [8, 5]},
+						{"origin": [-0.5, -1, 10.325], "size": [1, 7, 1], "inflate": 0.225, "pivot": [0, -0.75, 10.35], "rotation": [60, 0, 0], "uv": [10, 10]},
+						{"origin": [-0.5, 6.9, 10.525], "size": [1, 1, 1], "inflate": 0.225, "pivot": [0, -0.75, 10.35], "rotation": [65, 0, 0], "uv": [20, 6]},
+						{"origin": [-0.5, 3.1, 0.725], "size": [1, 1, 2], "inflate": 0.2, "uv": [14, 19]},
+						{"origin": [-0.5, 3.4, -0.075], "size": [1, 1, 2], "inflate": 0.1, "pivot": [0, 3.6, 1.725], "rotation": [-26, 0, 0], "uv": [6, 19]},
+						{"origin": [-0.5, 4.3517, 0.66793], "size": [1, 1, 1], "pivot": [0, 4.8517, 1.66793], "rotation": [36.5, 0, 0], "uv": [20, 4]},
+						{"origin": [-0.5, 3.1, -3.675], "size": [1, 2, 4], "inflate": 0.2, "uv": [0, 6]},
+						{"origin": [-0.5, 3.1, -15.675], "size": [1, 1, 12], "inflate": 0.1, "uv": [0, 19]},
+						{"origin": [-1, 2.6, -16.275], "size": [2, 2, 3], "inflate": -0.375, "uv": [7, 0]},
+						{"origin": [-1, 2.6, -14.275], "size": [2, 3, 1], "inflate": -0.2, "uv": [0, 19]},
+						{"origin": [-0.5, 4.25, -21.675], "size": [1, 1, 18], "uv": [0, 0]},
+						{"origin": [-0.5, 4.25, -21.775], "size": [1, 1, 1], "inflate": -0.05, "uv": [0, 36]},
+						{"origin": [-0.5, 1.4, 0.275], "size": [1, 1, 2], "inflate": -0.375, "uv": [6, 6]},
+						{"origin": [-0.5, 1.57, -0.05], "size": [1, 1, 1], "inflate": -0.41, "pivot": [0, 2.15, 0.525], "rotation": [45, 0, 0], "uv": [20, 2]},
+						{"origin": [-0.5, 1.4, -0.05], "size": [1, 1, 1], "inflate": -0.4, "pivot": [0, 2.15, 0.525], "rotation": [45, 0, 0], "uv": [20, 0]},
+						{"origin": [-0.5, 1.65, 0], "size": [1, 3, 1], "inflate": -0.4, "uv": [0, 6]},
+						{"origin": [-0.5, 1.625, 1.55], "size": [1, 3, 1], "inflate": -0.4, "uv": [0, 0]},
+						{"origin": [-0.5, 1.36, 1.6], "size": [1, 1, 1], "inflate": -0.4, "pivot": [0, 2.125, 2.075], "rotation": [-45, 0, 0], "uv": [6, 15]},
+						{"origin": [-0.5, 1.51, 1.6], "size": [1, 1, 1], "inflate": -0.41, "pivot": [0, 2.125, 2.075], "rotation": [-45, 0, 0], "uv": [18, 19]},
+						{"origin": [-0.5, 1.70874, 0.94153], "size": [1, 2, 1], "inflate": -0.425, "pivot": [0, 2.70874, 1.44153], "rotation": [-35, 0, 0], "uv": [14, 0]},
+						{"origin": [-0.5, 2.075, 0.975], "size": [1, 2, 1], "inflate": -0.4, "pivot": [0, 2.9, 1.5], "rotation": [-17, 0, 0], "uv": [6, 12]}
+					]
+				},
+				{
+					"name": "reload",
+					"parent": "sturmgewehr44",
+					"pivot": [0, 3.6, -9.175],
+					"cubes": [
+						{"origin": [-0.5, 3.1, -11.675], "size": [1, 1, 5], "inflate": 0.2, "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

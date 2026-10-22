@@ -1,0 +1,32 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gunsaddon:explosion_proof_boots"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B B",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:diamond"
+      },
+      "B": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "gunsaddon:explosion_proof_boots",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "context": "AlwaysUnlocked"
+      }
+    ]
+  }
+}

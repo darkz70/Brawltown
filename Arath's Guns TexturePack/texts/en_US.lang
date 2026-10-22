@@ -1,0 +1,24 @@
+﻿item.spawn_egg.entity.droneaddon:drone_ammo.name=Drone Ammo
+entity.droneaddon:drone_ammo.name=Drone Ammo
+
+item.spawn_egg.entity.gunsaddon:ww2_table.name=Simple Guns table
+entity.gunsaddon:ww2_table.name=Simple table
+item.spawn_egg.entity.gunsaddon:modern_guns_table.name=Advanced Guns table
+entity.gunsaddon:modern_guns_table.name=Advanced Guns table
+tile.gunsaddon:bullet_box.name=Bullet Box
+item.spawn_egg.entity.gunsaddon:guns_supply_drop.name=Guns Supply Drop [Guns]
+entity.gunsaddon:guns_supply_drop.name=Guns Supply Drop [Guns]
+item.spawn_egg.entity.gunsaddon:guns_supply_drop_orange.name=Guns Supply Drop
+entity.gunsaddon:guns_supply_drop_orange.name=Guns Supply Drop
+item.spawn_egg.entity.gunsaddon:guns_supply_drop_ammo.name=Guns Supply Drop [Ammo]
+entity.gunsaddon:guns_supply_drop_ammo.name=Guns Supply Drop [Ammo]
+item.leftforcraft:adrenaline.name=Adrenaline
+item.gunsaddon:bulletproof_vest=Bulletproof Vest
+item.gunsaddon:leg_arm_protection=Legs/Arms Protection
+item.gunsaddon:soldier_boots=Soldier Boots
+item.gunsaddon:battle_royale_helmet=Bulletproof Helmet
+
+item.gunsaddon:explosion_proof_chest=Explosion proof Chestplate
+item.gunsaddon:explosion_proof_pants=Explosion proof Pants
+item.gunsaddon:explosion_proof_boots=Explosion proof Boots
+item.gunsaddon:explosion_proof_helmet=Explosion proof Helmet

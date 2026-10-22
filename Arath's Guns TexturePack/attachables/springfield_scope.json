@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "gunsaddon:springfield_scope",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/3d_guns/springfield.png",
+				"sniper_ui": "textures/3d_guns/sniper_ui.png"
+			},
+			"geometry": {
+				"default": "geometry.springfield_scope",
+				"sniper_ui": "geometry.sniper_ui"
+			},
+			"render_controllers": [ "controller.render.item_3d", "controller.render.sniper_ui" ],
+			"animations": {
+				"first_person_main_hand": "animation.guns.first_person_main_hand",
+				"first_person_sneaking_main_hand": "animation.guns.first_person_main_hand",
+				"sniper": "animation.guns.sniper_ui",
+				"third_person_main_hand": "animation.guns.third_person_main_hand"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';"
+				],
+				"animate": [
+					{
+						"first_person_main_hand": "(v.main_hand && c.is_first_person) && !query.is_sneaking"
+					},
+					{
+						"first_person_sneaking_main_hand": "(v.main_hand && c.is_first_person) && query.is_sneaking"
+					},
+					{
+						"sniper": "(v.main_hand && c.is_first_person) && query.is_sneaking"
+					},
+					{
+						"third_person_main_hand": "v.main_hand && !c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+} 

@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.shoot": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/particle minecraft:basic_flame_particle ~ ~-1.5 ~",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace blue_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace frosted_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace packed_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace glass",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace glass_pane",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace tinted_glass"
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/particle minecraft:basic_flame_particle ~ ~-0.5 ~",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace blue_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace frosted_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace packed_ice",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace glass",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace glass_pane",
+            "/fill ~ ~ ~ ~ ~ ~ air [] replace tinted_glass"
+          ]
+        }
+      }
+    }
+  }
+}

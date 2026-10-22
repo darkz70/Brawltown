@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.buzz_bomber": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "buzz_bomber": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_smoke_particle ~ ~ ~",
+			"/particle minecraft:basic_flame_particle ~ ~ ~"
+          ]
+        },
+        "buzz_bomber": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_smoke_particle ~ ~ ~",
+			"/particle minecraft:basic_flame_particle ~ ~ ~"
+          ]
+        }
+      }
+    }
+  }
+}

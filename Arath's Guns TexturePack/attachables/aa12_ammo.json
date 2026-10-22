@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "gunsaddon:aa12_ammo",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/3d_guns/aa12.png"
+			},
+			"geometry": {
+				"default": "geometry.aa12_ammo"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"first_person_main_hand": "animation.guns.first_person_main_hand",
+				"third_person_main_hand": "animation.guns.third_person_main_hand",
+				"first_person_off_hand": "animation.ammo.off_hand",
+				"third_person_off_hand": "animation.ammo.off_hand"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+				"animate": [
+					{
+						"first_person_main_hand": "v.main_hand && c.is_first_person"
+					},
+					{
+						"third_person_main_hand": "v.main_hand && !c.is_first_person"
+					},
+					{
+						"first_person_off_hand": "v.off_hand && c.is_first_person"
+					},
+					{
+						"third_person_off_hand": "v.off_hand && !c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+} 

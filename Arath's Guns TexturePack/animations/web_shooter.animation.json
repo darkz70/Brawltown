@@ -1,0 +1,13 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.player.web_shooter" : {
+			"loop" : true,
+			"bones" : {
+				"leftarm" : {
+					"rotation" : [ "-90.0 + query.target_x_rotation - query.is_sneaking * 15.0 - this", "27.5 + query.target_y_rotation", 0.0 ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.26.13",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pa:krystal_2_b02f7d21"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "pa:krystal"
+      }
+    },
+    "result": {
+      "item": "pa:krystal_2",
+      "count": 1
+    },
+    "unlock": {
+      "context": "AlwaysUnlocked"
+    }
+  }
+}

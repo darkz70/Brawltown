@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:dynamite_entity",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/3d_guns/dynamite"
+			},
+			"geometry": {
+				"default": "geometry.dynamite"
+			},
+			"animations": {
+				"loop": "animation.dynamite.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.item_3d"
+			],
+			"spawn_egg": {
+				"texture": "dynamite",
+				"texture_index": 0
+			}
+		}
+	}
+}

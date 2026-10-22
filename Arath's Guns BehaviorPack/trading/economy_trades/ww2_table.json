@@ -1,0 +1,437 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 25,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 8
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:luger"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:luger_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 5
+                },
+                {
+                  "item": "minecraft:sand",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:grenade_m67",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:sand",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dynamite",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:double_action_revolver"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:double_action_revolver",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:double_action_revolver",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dual_double_action_revolver"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 18
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 35
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:winchester_1887"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 24
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mauser"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mauser_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 14
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 28
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mp40"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:mp40_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:springfield"
+                }
+              ]
+            },
+			{
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:springfield",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:spyglass",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:springfield_scope"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_pesada",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:springfield_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 36
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:sturmgewehr44"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:sturmgewehr44_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 15
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:gold_thompson"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_mediana",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:gold_thompson_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 15
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 30
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:thompson"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:bala_ligera",
+                  "quantity": 50
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:thompson_ammo"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 20
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 35
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:winchester_shotgun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 40
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:bazooka"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 18
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:contender"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:coal",
+                  "quantity": 18
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 26
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:sawed_off_shotgun"
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gunsaddon:sawed_off_shotgun",
+                  "quantity": 1
+                },
+                {
+                  "item": "gunsaddon:sawed_off_shotgun",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gunsaddon:dual_sawed_off_shotgun"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "gunsaddon:modern_guns_table",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/blocks/modern_guns_table"
+			},
+			"geometry": {
+				"default": "geometry.modern_guns_table"
+			},
+			"animations": {
+				"humanoid_big_head": "animation.humanoid.big_head",
+				"walk": "animation.modern_guns_table.walk",
+				"move": "animation.modern_guns_table.idle",
+				"attack": "animation.modern_guns_table.attack",
+				"flower": "animation.modern_guns_table.flower",
+				"look_at_target": "animation.common.look_at_target"
+			},
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+			"animation_controllers": [
+			{ "humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head" },
+				{
+					"move": "controller.animation.zombie_tank.move"
+				},
+				{
+					"arm": "controller.animation.zombie_tank.arm_movement"
+				},
+				{
+					"attack": "controller.animation.zombie_tank.attack"
+				}
+			],
+			"render_controllers": [
+				"controller.render.item_3d"
+			],
+			"spawn_egg": {
+				"texture": "modern_guns_table",
+				"texture_index": 0
+			}
+		}
+	}
+}
